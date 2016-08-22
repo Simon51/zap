@@ -1,0 +1,313 @@
+<?xml version="1.0"?><OWASPZAPReport version="2.5.0" generated="mer., 17 août 2016 11:07:31">
+<site name="https://cdn1.developermedia.com" host="cdn1.developermedia.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://cdn1.developermedia.com/a.min.js</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://cdn2.developermedia.com" host="cdn2.developermedia.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://cdn2.developermedia.com/a.min.js</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://cdnjs.cloudflare.com" host="cdnjs.cloudflare.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10015</pluginid>
+  <alert>En-t&#234;tes HTTP Pragma et Cache-control incomplets ou absents</alert>
+  <name>En-t&#234;tes HTTP Pragma et Cache-control incomplets ou absents</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;Les en-t&#234;tes HTTP cache-control et pragma n&#8217;ont pas &#233;t&#233; d&#233;finis correctement ou manquent, permettant au navigateur et aux proxys de mettre en cache le contenu.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css</uri>
+  <param>Cache-Control</param>
+  <evidence>public, max-age=30672000</evidence>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Chaque fois que possible, assurez-vous que l&apos;en-t&#234;te HTTP cache-control est renseign&#233;e &#224; no-cache, no-store, must-revalidate, private; et que l&#8217;en-t&#234;te pragma HTTP est renseign&#233;e &#224; no-cache.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Web_Content_Caching&lt;/p&gt;</reference>
+  <cweid>525</cweid>
+  <wascid>13</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/fonts/fontawesome-webfont.woff2?v=4.6.1</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>2</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://fonts.googleapis.com" host="fonts.googleapis.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10015</pluginid>
+  <alert>En-t&#234;tes HTTP Pragma et Cache-control incomplets ou absents</alert>
+  <name>En-t&#234;tes HTTP Pragma et Cache-control incomplets ou absents</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;Les en-t&#234;tes HTTP cache-control et pragma n&#8217;ont pas &#233;t&#233; d&#233;finis correctement ou manquent, permettant au navigateur et aux proxys de mettre en cache le contenu.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic</uri>
+  <param>Cache-Control</param>
+  <evidence>private, max-age=86400</evidence>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Chaque fois que possible, assurez-vous que l&apos;en-t&#234;te HTTP cache-control est renseign&#233;e &#224; no-cache, no-store, must-revalidate, private; et que l&#8217;en-t&#234;te pragma HTTP est renseign&#233;e &#224; no-cache.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Web_Content_Caching&lt;/p&gt;</reference>
+  <cweid>525</cweid>
+  <wascid>13</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://fonts.gstatic.com" host="fonts.gstatic.com" port="443" ssl="true"><alerts></alerts></site><site name="https://partner.googleadservices.com" host="partner.googleadservices.com" port="443" ssl="true"><alerts></alerts></site><site name="https://shavar.services.mozilla.com" host="shavar.services.mozilla.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://shavar.services.mozilla.com/downloads?client=navclient-auto-ffox&amp;appver=46.0.1&amp;pver=2.2</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://stats.g.doubleclick.net" host="stats.g.doubleclick.net" port="443" ssl="true"><alerts></alerts></site><site name="https://tracking-protection.cdn.mozilla.net" host="tracking-protection.cdn.mozilla.net" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://tracking-protection.cdn.mozilla.net/mozstd-track-digest256/1458772625</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>https://tracking-protection.cdn.mozilla.net/mozstd-trackwhite-digest256/1458772625</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>2</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://troyhunt.disqus.com" host="troyhunt.disqus.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://troyhunt.disqus.com/count.js</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site><site name="https://www.google-analytics.com" host="www.google-analytics.com" port="443" ssl="true"><alerts></alerts></site><site name="https://www.googletagservices.com" host="www.googletagservices.com" port="443" ssl="true"><alerts></alerts></site><site name="https://www.troyhunt.com" host="www.troyhunt.com" port="443" ssl="true"><alerts><alertitem>
+  <pluginid>10015</pluginid>
+  <alert>En-t&#234;tes HTTP Pragma et Cache-control incomplets ou absents</alert>
+  <name>En-t&#234;tes HTTP Pragma et Cache-control incomplets ou absents</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;Les en-t&#234;tes HTTP cache-control et pragma n&#8217;ont pas &#233;t&#233; d&#233;finis correctement ou manquent, permettant au navigateur et aux proxys de mettre en cache le contenu.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://www.troyhunt.com/</uri>
+  <param>Cache-Control</param>
+  <evidence>public, max-age=0</evidence>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/assets/css/main.min.css?v=9470ff23aa</uri>
+  <param>Cache-Control</param>
+  <evidence>public, max-age=31536000</evidence>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/page/2/</uri>
+  <param>Cache-Control</param>
+  <evidence>public, max-age=0</evidence>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/speaking/</uri>
+  <param>Cache-Control</param>
+  <evidence>public, max-age=0</evidence>
+  </instance>
+  </instances>
+  <count>4</count>
+  <solution>&lt;p&gt;Chaque fois que possible, assurez-vous que l&apos;en-t&#234;te HTTP cache-control est renseign&#233;e &#224; no-cache, no-store, must-revalidate, private; et que l&#8217;en-t&#234;te pragma HTTP est renseign&#233;e &#224; no-cache.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Web_Content_Caching&lt;/p&gt;</reference>
+  <cweid>525</cweid>
+  <wascid>13</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10011</pluginid>
+  <alert>Cookie sans indicateur s&#251;r</alert>
+  <name>Cookie sans indicateur s&#251;r</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://www.troyhunt.com/</uri>
+  <param>__cfduid</param>
+  <evidence>Set-Cookie: __cfduid</evidence>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://www.owasp.org/index.php/Testing_for_cookies_attributes_(OWASP-SM-002)&lt;/p&gt;</reference>
+  <cweid>614</cweid>
+  <wascid>13</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10016</pluginid>
+  <alert>Protection XSS du navigateur Internet non activ&#233;e</alert>
+  <name>Protection XSS du navigateur Internet non activ&#233;e</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;La protection XSS du navigateur Internet n&apos;est pas activ&#233;e, ou est d&#233;sactiv&#233;e par la configuration de l&apos;en-t&#234;te de r&#233;ponse HTTP &apos;X-XSS-Protection&apos; sur le serveur web&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://www.troyhunt.com/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/page/2/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/speaking/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  </instances>
+  <count>3</count>
+  <solution>&lt;p&gt;Assurez-vous que le filtre XSS du navigateur internet est activ&#233;, en renseignant l&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection &#224; &apos;1&apos;.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection autorise le serveur internet &#224; activer ou d&#233;sactiver le m&#233;canisme de protection XSS du navigateur internet. Les valeurs suivantes tenteraient d&apos;activer la protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; mode = block&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; report = http://www.example.com/xss&lt;/p&gt;&lt;p&gt;Les valeurs suivantes d&#233;sactiveraient cette protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 0&lt;/p&gt;&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection est actuellement support&#233;e par Internet Explorer, Chrome et Safari (WebKit). &lt;/p&gt;&lt;p&gt;Notez que cette alerte n&apos;est d&#233;clench&#233;e que si le corps de r&#233;ponse pouvaient contenir une charge utile XSS (avec un type de contenu texte, d&apos;une longueur diff&#233;rente de z&#233;ro).&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet&lt;/p&gt;&lt;p&gt;https://blog.veracode.com/2014/03/guidelines-for-setting-security-headers/&lt;/p&gt;</reference>
+  <cweid>933</cweid>
+  <wascid>14</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options Header Not Set</alert>
+  <name>X-Frame-Options Header Not Set</name>
+  <riskcode>2</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Medium (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Frame-Options n&apos;est pas incluse dans la r&#233;ponse HTTP pour prot&#233;ger contre les attaques de &apos;ClickJacking&apos;.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>https://www.troyhunt.com/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/page/2/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>https://www.troyhunt.com/speaking/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  </instances>
+  <count>3</count>
+  <solution>&lt;p&gt;Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it&apos;s set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it&apos;s part of a FRAMESET) then you&apos;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. ALLOW-FROM allows specific websites to frame the web page in supported web browsers).&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site></OWASPZAPReport>

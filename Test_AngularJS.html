@@ -1,0 +1,69 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" href="css/bootstrap.css" />
+	 <link rel="stylesheet" href="css/bootstrap-theme.css" />
+</head>
+
+<body>
+<div ng-app="app">
+	<div ng-controller="MainCtrl">
+		<nvd3 options="options" data="data"></nvd3>
+	</div>
+
+
+
+	<div ng-controller="ReportCtrl" class="container col-lg-10 col-lg-offset-1 page-header">
+		<h3><br />{{presentation}}</h3>		
+			<table class="table table-striped" border="1">
+				<thead>
+					<tr>
+						<th>URL touchée {{risk}}</th>
+						<th>Type de la faille</th>
+					</tr>
+				</thead>
+				</tbody>
+					<tr ng-repeat='site in zapReport' ng-if="site.alerts !== ''" >
+		
+							<td>
+								<div ng-controller="CollapseDemoCtrl">
+									<button type="button" class="btn btn-info " ng-click="isCollapsed = !isCollapsed">{{site._name}}</button>
+									<div uib-collapse="isCollapsed">
+										<div class="well well-lg">
+										
+										</div>
+									</div>
+								</div>
+							</td>
+							
+							<td >
+								<span ng-repeat='alertitem in site.alerts.alertitem' >
+									-{{alertitem.alert}} {{HighRisk}} <br />
+								</span> 
+							</td>
+
+					
+					</tr>
+					
+				</tbody>
+			
+			
+	</div>
+</div>
+
+</body>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script type="text/javascript" src="xml2json.js"></script>
+	<script type="text/javascript" src="xml2json.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.5/angular-nvd3.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <script type="text/javascript" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.2.js"></script>
+	<script type="text/javascript" src="ui-bootstrap-tpls-2.0.2.min.js"></script>
+	<script type="text/javascript" src="FirstTry_Angular.js"></script>
+	
+
+</html>
