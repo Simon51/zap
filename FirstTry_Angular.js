@@ -23,23 +23,23 @@ app.controller("ReportCtrl",function($scope, $http) {
 	    .success(function (response) {
 		console.log($scope.zapReport);
 	  });
+	console.log($scope.zapReport);
 	  
-	$scope.HighRisk = function(zapReport) {
-		var compteur =0;
-		angular.forEach(zapReport.site, function(site, key) {
-			angular.forEach(site.alerts,function(alerts, key) {
-				if (alerts.alertitem.riskcode === "1") {
-					compteur++;
-					console.log(compteur);
-				}
-			});
-		});
-		return compteur;
-	};
-
-	$scope.High = $scope.HighRisk($scope.report);
-	alert($scope.High);
-	
+//	$scope.HighRisk = function(zapReport) {
+//		var compteur =0;
+//		alert(zapReport[1]);
+//			for (i = 0; i < zapReport.length;i++) {
+//				for(a =0; a <zapReport.alerts.alertitem.length; a ++) {
+//					if(zapReport.alerts.alertitem[a] === "1") {
+//						compteur++;
+//					}
+//				}
+//			}
+//			return compteur;
+//	};
+//
+//	$scope.High = $scope.HighRisk($scope.report);
+//	
 	$scope.traitementReport = function (report) {
 		var newReport = []
 		angular.forEach(report.OWASPZAPReport.site,function(site, key){
