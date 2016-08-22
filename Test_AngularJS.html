@@ -1,69 +1,101 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	 <link rel="stylesheet" href="css/bootstrap.css" />
-	 <link rel="stylesheet" href="css/bootstrap-theme.css" />
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" href="color.css" />
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
 
-<body>
-<div ng-app="app">
-	<div ng-controller="MainCtrl">
-		<nvd3 options="options" data="data"></nvd3>
-	</div>
+<body ng-app="app">
+	<div ng-controller="ReportCtrl">
 
+		<div class="form-actions">
+			<nvd3 options="options" data="data"></nvd3>
 
+			Low : {{values[0]}} <br> Med : {{values[1]}}<br> High :
+			{{values[2]}} <br>
 
-	<div ng-controller="ReportCtrl" class="container col-lg-10 col-lg-offset-1 page-header">
-		<h3><br />{{presentation}}</h3>		
+		</div>
+
+		<div class="container col-lg-10 col-lg-offset-1 page-header">
+			<p>{{content.OWASPZAPReport.site[0]._name}}</p>
 			<table class="table table-striped" border="1">
 				<thead>
 					<tr>
-						<th>URL touchée </th>
+						<th>URL touchée</th>
 						<th>Type de la faille</th>
 					</tr>
 				</thead>
 				</tbody>
-					<tr ng-repeat='site in zapReport' ng-if="site.alerts !== ''" >
-		
-							<td>
-								<div ng-controller="CollapseDemoCtrl">
-									<button type="button" class="btn btn-info " ng-click="isCollapsed = !isCollapsed">{{site._name}}</button>
-									<div uib-collapse="isCollapsed">
-										<div class="well well-lg">
-										
-										</div>
+				<tr ng-repeat='site in content' ng-if="site.alerts !== '' ">
+
+					<td>
+
+						<div>{{site._name}}</div>
+						<div uib-collapse="isCollapsed">
+							<div class="well well-lg"></div>
+						</div>
+					</td>
+
+					<td><span ng-repeat='alertitem in site.alerts.alertitem'>
+							<div class="form-actions">
+								<div ng-if="alertitem.riskcode ==='1'">
+									<button type="button" class="btn btn-info"
+										ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}
+									</button>
+									<div uib-collapse="isCollapsed" horizontal>
+										<div class="well well-lg">{{alertitem.desc}}</div>
 									</div>
 								</div>
-							</td>
-							
-							<td >
-								<span ng-repeat='alertitem in site.alerts.alertitem' >
-									-{{alertitem.alert}} {{High}} <br />
-								</span> 
-							</td>
+							</div>
+							<div class="form-actions">
+								<div ng-if="alertitem.riskcode ==='2'">
+									<button type="button" class="btn btn-warning"
+										ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}
+									</button>
+									<div uib-collapse="isCollapsed">
+										<div class="well well-lg">{{alertitem.desc}}</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-actions">
+								<div ng-if="alertitem.riskcode ==='3'">
+									<button type="button" class="btn btn-danger">{{alertitem.name}}</button>
+									<div uib-collapse="isCollapsed">
+										<div class="well well-lg">{{alertitem.desc}}</div>
+									</div>
+								</div>
+							</div>
+					</span></td>
 
-					
-					</tr>
-					
+				</tr>
 				</tbody>
-			
-			
-	</div>
-</div>
-
+				</div>
+				</div>
 </body>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-	<script type="text/javascript" src="xml2json.js"></script>
-	<script type="text/javascript" src="xml2json.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.5/angular-nvd3.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
-    <script type="text/javascript" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.2.js"></script>
-	<script type="text/javascript" src="ui-bootstrap-tpls-2.0.2.min.js"></script>
-	<script type="text/javascript" src="FirstTry_Angular.js"></script>
-	
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script type="text/javascript" src="xml2json.js"></script>
+<script type="text/javascript" src="xml2json.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
+	charset="utf-8"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.5/angular-nvd3.min.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+<script type="text/javascript"
+	src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.2.js"></script>
+<script type="text/javascript"
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+<script type="text/javascript" src="FirstTry_Angular.js"></script>
+
 
 </html>
