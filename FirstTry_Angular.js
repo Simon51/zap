@@ -9,26 +9,37 @@ app.controller("ReportCtrl",function($scope, $http) {
 	//Variables du controller
     $scope.titre = "Rapport ZAP";
 	$scope.presentation="Liste des vulnérabilités de l'application";	
-
-	//$scope.risk = $scope.HighRisk($scope.zapReport);
 	
 	
-	
-	 $http.get("ReportForSpiderWithActiveScan-17-11-07.xml",
+	$scope.report = $http.get("ReportForSpiderWithActiveScan-17-11-07.xml",
             {
-    transformResponse: function (cnv) {
-      var x2js = new X2JS();
-      var aftCnv = x2js.xml_str2json(cnv);
-      $scope.zapReport = $scope.traitementReport(aftCnv);
-	 
-	  return aftCnv;
+	    transformResponse: function (cnv) {
+	      var x2js = new X2JS();
+	      var aftCnv = x2js.xml_str2json(cnv);
+	      $scope.zapReport = $scope.traitementReport(aftCnv);
+		  return $scope.zapReport;
+	    }
+	  })
+	    .success(function (response) {
+		console.log($scope.zapReport);
+	  });
 	  
-    }
-  })
-    .success(function (response) {
-	console.log($scope.zapReport);
-  });
-  
+	$scope.HighRisk = function(zapReport) {
+		var compteur =0;
+		angular.forEach(zapReport.site, function(site, key) {
+			angular.forEach(site.alerts,function(alerts, key) {
+				if (alerts.alertitem.riskcode === "1") {
+					compteur++;
+					console.log(compteur);
+				}
+			});
+		});
+		return compteur;
+	};
+
+	$scope.High = $scope.HighRisk($scope.report);
+	alert($scope.High);
+	
 	$scope.traitementReport = function (report) {
 		var newReport = []
 		angular.forEach(report.OWASPZAPReport.site,function(site, key){
@@ -46,19 +57,6 @@ app.controller("ReportCtrl",function($scope, $http) {
 		return newReport;
 	};
 	
-	/*$scope.HighRisk = function(zapReport) {
-		var compteur =0;
-		angular.forEach(zapReport.OWASPZAPReport.site, function(site, key) {
-			angular.forEach(site.alerts,function(alerts, key) {
-				if (alerts.alertitem.riskcode === "1") {
-					compteur++;
-					console.log(compteur);
-				}
-			});
-		});
-		return compteur;
-	};
-	*/
 });
 
 app.controller('CollapseDemoCtrl', function ($scope) {
