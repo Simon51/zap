@@ -10,3 +10,11 @@
   background-color: red;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+.titreArray {
+	font-weight: bold;
+	font-family: "Arial", "Lucida Grande";
+}

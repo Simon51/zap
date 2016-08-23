@@ -4,7 +4,7 @@ var app = angular.module('app',['nvd3','ui.bootstrap']);
 
 
 
-app.controller("ReportCtrl",function($scope, $http, $rootScope) {
+app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 	$scope.isCollapsed = true;
 	$http.get("ReportForSpiderWithActiveScan.xml", {
 
@@ -28,15 +28,15 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope) {
 
 		$scope.data = [
 		               {
-		            	   key: "Medium",
+		            	   key: "Medium: " + $scope.values[0],
 		            	   y: $scope.values[0]
 		               },
 		               {
-		            	   key: "Low",
+		            	   key: "Low: "+$scope.values[1],
 		            	   y: $scope.values[1]
 		               },
 		               {
-		            	   key: "High",
+		            	   key: "High: " + $scope.values[2] ,
 		            	   y: $scope.values[2]
 		               }
 		               ];
@@ -58,7 +58,6 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope) {
 				});
 			});
 		});
-		console.log('ccccc ' +compteur);
 		return compteur;
 	};
 
@@ -79,24 +78,34 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope) {
 		return newReport;
 	}; 
 
-
+	$scope.SkipValidation = function(value) { return $sce.trustAsHtml(value); }; 
 
 	$scope.options = {
 			chart: {
 				type: 'pieChart',
-				height: 400,
+				height: 450,
 				x: function(d){return d.key;},
 				y: function(d){return d.y;},
 				showLabels: true,
 				duration: 500,
 				labelThreshold: 0.01,
 				labelSunbeamLayout: false,
+//				pie: {
+//                    startAngle: function(d) { return d.startAngle/2 -Math.PI/2 },
+//                    endAngle: function(d) { return d.endAngle/2 -Math.PI/2 }
+//                },
+                margin: {
+					top: 0,
+					right: 100,
+					bottom: -30,
+					left: 100
+				},
 				legend: {
 					margin: {
-						top: 5,
-						right: 35,
+						top: 10,
+						right: 500,
 						bottom: 5,
-						left: 0
+						left: 500
 					}
 				},
 				tooltip: {
