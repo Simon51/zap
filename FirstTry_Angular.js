@@ -28,15 +28,15 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope) {
 
 		$scope.data = [
 		               {
-		            	   key: "High",
+		            	   key: "Medium",
 		            	   y: $scope.values[0]
 		               },
 		               {
-		            	   key: "Medium",
+		            	   key: "Low",
 		            	   y: $scope.values[1]
 		               },
 		               {
-		            	   key: "Low",
+		            	   key: "High",
 		            	   y: $scope.values[2]
 		               }
 		               ];
@@ -98,24 +98,13 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope) {
 						bottom: 5,
 						left: 0
 					}
+				},
+				tooltip: {
+					enabled : false
 				}
+				
 			}
 	};
-
-	$scope.data = [
-	               {
-	            	   key: "High",
-	            	   y: 3
-	               },
-	               {
-	            	   key: "Medium",
-	            	   y: 2
-	               },
-	               {
-	            	   key: "Low",
-	            	   y: 9
-	               }
-	               ];
 
 });
 
