@@ -6,7 +6,7 @@ var app = angular.module('app',['nvd3','ui.bootstrap']);
 
 app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 	$scope.isCollapsed = true;
-	$http.get("ReportForSpiderWithActiveScan.xml", {
+	$http.get("ReportForSpiderWithActiveScan-17-11-07.xml", {
 
 
 		transformResponse:function(data) {
@@ -26,13 +26,14 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 		$scope.values = $scope.HighRisk($scope.content);
 		console.log($scope.values);
 
+
 		$scope.data = [
 		               {
-		            	   key: "Medium: " + $scope.values[0],
+		            	   key: "Low: " + $scope.values[0],
 		            	   y: $scope.values[0]
 		               },
 		               {
-		            	   key: "Low: "+$scope.values[1],
+		            	   key: "Medium: "+$scope.values[1],
 		            	   y: $scope.values[1]
 		               },
 		               {
@@ -82,19 +83,28 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 
 	$scope.options = {
 			chart: {
+
 				type: 'pieChart',
-				height: 450,
+				height: 350,
+				width: 550,
 				x: function(d){return d.key;},
 				y: function(d){return d.y;},
 				showLabels: true,
 				duration: 500,
+				showLegend: false,
 				labelThreshold: 0.01,
 				labelSunbeamLayout: false,
+				color: ['#82cfe6', '#eea239', '#b52e2b'],
+				donut: true,
+				donutLabelsOutside:true,
+				
+
+
 //				pie: {
-//                    startAngle: function(d) { return d.startAngle/2 -Math.PI/2 },
-//                    endAngle: function(d) { return d.endAngle/2 -Math.PI/2 }
-//                },
-                margin: {
+//	startAngle: function(d) { return d.startAngle/2 -Math.PI/2 },
+//				endAngle: function(d) { return d.endAngle/2 -Math.PI/2 }
+//				},
+				margin: {
 					top: 0,
 					right: 100,
 					bottom: -30,
@@ -111,9 +121,12 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 				tooltip: {
 					enabled : false
 				}
-				
+
 			}
+
 	};
+
+
 
 });
 
