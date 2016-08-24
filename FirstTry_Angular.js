@@ -7,7 +7,7 @@ var app = angular.module('app',['nvd3','ui.bootstrap']);
 app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 	$scope.isCollapsed = true;
 	$http.get("ReportForSpiderWithActiveScan-17-11-07.xml", {
-
+//ReportForSpiderWithActiveScan-17-11-07.xml
 
 		transformResponse:function(data) {
 			                      // convert the data to JSON and provide
@@ -15,37 +15,39 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 			                        var x2js = new X2JS();
 			                        var json = x2js.xml_str2json( data );
 			                        var report = $scope.traitementReport(json);
-			return report;
+									return report;
 
 			               }
 	                 
 	})
 	.then(function(response) {
 		$scope.content = response.data;
-		console.log(response.data);
-		$scope.values = $scope.HighRisk($scope.content);
+		$scope.values = $scope.Risk($scope.content);
 		console.log($scope.values);
-
-
+		console.log($scope.content);
 		$scope.data = [
 		               {
-		            	   key: "Low: " + $scope.values[0],
+		            	   key: "Low: " + Math.round((($scope.values[0]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100)) +"%",
 		            	   y: $scope.values[0]
 		               },
 		               {
-		            	   key: "Medium: "+$scope.values[1],
+		            	   key: "Medium: "+ Math.round((($scope.values[1]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100)) +"%",
 		            	   y: $scope.values[1]
 		               },
 		               {
-		            	   key: "High: " + $scope.values[2] ,
+		            	   key: "High: " + Math.round((($scope.values[2]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100)) +"%" ,
 		            	   y: $scope.values[2]
 		               }
 		               ];
+		
+		$scope.low = Math.round((($scope.values[0]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100));
+		$scope.med = Math.round((($scope.values[1]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100));
+		$scope.high = Math.round((($scope.values[2]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100));
 	});
 
 
 
-	$scope.HighRisk = function(contenu) {
+	$scope.Risk = function(contenu) {
 		console.log('contenu !! ' + JSON.stringify(contenu));
 		var compteur = [0,0,0];
 		angular.forEach(contenu, function(site, key) {
@@ -60,7 +62,7 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 			});
 		});
 		return compteur;
-	};
+	}; 
 
 
 	$scope.traitementReport = function (report) {
@@ -77,7 +79,7 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 			}
 		});
 		return newReport;
-	}; 
+	};  
 
 	$scope.SkipValidation = function(value) { return $sce.trustAsHtml(value); }; 
 
@@ -96,18 +98,11 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 				labelSunbeamLayout: false,
 				color: ['#82cfe6', '#eea239', '#b52e2b'],
 				donut: true,
-				donutLabelsOutside:true,
-				
-
-
-//				pie: {
-//	startAngle: function(d) { return d.startAngle/2 -Math.PI/2 },
-//				endAngle: function(d) { return d.endAngle/2 -Math.PI/2 }
-//				},
+				labelsOutside:true,
 				margin: {
 					top: 0,
 					right: 100,
-					bottom: -30,
+					bottom: -25,
 					left: 100
 				},
 				legend: {
