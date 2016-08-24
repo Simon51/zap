@@ -5,6 +5,7 @@ var app = angular.module('app',['nvd3','ui.bootstrap']);
 
 
 app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
+	$scope.isArray = angular.isArray;
 	$scope.isCollapsed = true;
 	$http.get("ReportForSpiderWithActiveScan-17-11-07.xml", {
 //ReportForSpiderWithActiveScan-17-11-07.xml
@@ -14,7 +15,8 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 			                      // it to the success function below
 			                        var x2js = new X2JS();
 			                        var json = x2js.xml_str2json( data );
-			                        var report = $scope.traitementReport(json);
+			//console.log(json);
+			                        var report = $scope.traitementReport(json);
 									return report;
 
 			               }
@@ -67,6 +69,14 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 
 	$scope.traitementReport = function (report) {
 		var newReport = []
+		console.log(JSON.stringify(report));
+		
+		if(!angular.isArray(report.OWASPZAPReport.site)){
+			var site = report.OWASPZAPReport.site;
+			report.OWASPZAPReport.site=[];
+			report.OWASPZAPReport.site.push(site);
+		}
+		
 		angular.forEach(report.OWASPZAPReport.site,function(site, key){
 			if (site.alerts!==""){
 				if (!angular.isArray(site.alerts.alertitem)){
