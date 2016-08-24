@@ -311,23 +311,22 @@
 											<tbody>
 												<tr>
 													<td class="info bold">Low : {{values[0]}}</td>
-													<td border="4">
-														{{(values[0]/(values[1]+values[0]+values[2]))*100}}%</td>
+													<td border="4">{{low}}%</td>
 												</tr>
 												<tr>
 													<td class="warning bold">Med : {{values[1]}}</td>
-													<td>{{(values[1]/(values[1]+values[0]+values[2]))*100}}%</td>
+													<td>{{med}}%</td>
 												</tr>
 												<tr>
 													<td class="danger bold">High :{{values[2]}}</td>
-													<td>{{(values[2]/(values[1]+values[0]+values[2]))*100}}%</td>
+													<td>{{high}}%</td>
 												</tr>
 											</tbody>
 										</table>
 
 									</div>
 									<div class="col-lg-8 col-md-8">
-										<nvd3 options="options" data="data"  ></nvd3>
+										<nvd3 options="options" data="data"></nvd3>
 									</div>
 
 								</div>
@@ -347,17 +346,16 @@
 											</tr>
 										</thead>
 										</tbody>
-										<tr ng-repeat='site in content' ng-if="site.alerts !== '' ">
-
+										<tr ng-repeat='site in content'>
 											<td>
-
-												<div class="bold">{{site._name}}</div>
-												<div uib-collapse="isCollapsed">
-													<div class="well well-lg"></div>
+												<div class="bold">
+													<a href="{{site._name}}">{{site._name}}</a>
 												</div>
 											</td>
-
-											<td><span ng-repeat='alertitem in site.alerts.alertitem'>
+											<td>
+											
+											<span ng-repeat='alertitem in site.alerts.alertitem'>
+											
 													<div class="form-actions">
 														<div ng-if="alertitem.riskcode ==='1'">
 															<button type="button" class="btn btn-info"
@@ -365,17 +363,17 @@
 															</button>
 															<div uib-collapse="isCollapsed" horizontal>
 																<div class="well well-lg">
-
-																	<u>Description du problème: <br></u>
+																	<uib-tabset active="active"> <uib-tab
+																		index="0" heading="Description"> <br>
 																	<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
-																	<p>
-																		<br> <u>Solution possible:</u>
+																	</uib-tab> <uib-tab index="1" heading="Solution"> <br>
 																	<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
-																	</p>
+																	</uib-tab> </uib-tabset>
 																</div>
 															</div>
 														</div>
 													</div>
+												
 													<div class="form-actions">
 														<div ng-if="alertitem.riskcode ==='2'">
 															<button type="button" class="btn btn-warning"
@@ -384,33 +382,36 @@
 															<div uib-collapse="isCollapsed">
 																<div class="well well-lg">
 
-																	<u>Description du problème: <br></u>
+																	<uib-tabset active="active"> <uib-tab
+																		index="0" heading="Description"> <br>
 																	<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
-																	<p>
-																		<br> <u>Solution possible:</u>
+																	</uib-tab> <uib-tab index="1" heading="Solution"> <br>
 																	<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
-																	</p>
+																	</uib-tab> </uib-tabset>
 																</div>
 															</div>
 														</div>
 													</div>
 													<div class="form-actions">
 														<div ng-if="alertitem.riskcode ==='3'">
-															<button type="button" class="btn btn-danger">{{alertitem.name}}</button>
+															<button type="button" class="btn btn-danger"
+																ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}</button>
 															<div uib-collapse="isCollapsed">
 																<div class="well well-lg">
 
-																	<u>Description du problème: <br></u>
+																	<uib-tabset active="active"> <uib-tab
+																		index="0" heading="Description"> <br>
 																	<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
-																	<p>
-																		<br> <u>Solution possible:</u>
+																	</uib-tab> <uib-tab index="1" heading="Solution"> <br>
 																	<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
-																	</p>
+																	</uib-tab> </uib-tabset>
 																</div>
 															</div>
 														</div>
 													</div>
-											</span></td>
+											</span>
+							
+											</td>
 
 										</tr>
 										</tbody>
