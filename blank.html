@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>SB Admin 2 - Bootstrap Admin Theme</title>
+<title>Rapport de sécurité ZAP</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,13 +41,8 @@
 		<nav class="navbar navbar-default navbar-static-top" role="navigation"
 			style="margin-bottom: 0">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">OWASP ZAP Report</a>
+				<img  src="zap.png" width="50" height="50"> 
+				<a class="navbar-brand" href="index.html">OWASP ZAP Report </a>
 			</div>
 		</nav>
 
@@ -60,7 +55,7 @@
 							<h1 class="page-header">Rapport ZAP</h1>
 							<div ng-controller="ReportCtrl">
 								<div class="container col-lg-12 col-md-12">
-									<div class="col-lg-4 col-md-4" style="padding-top: 15%">
+									<div class="col-lg-3 col-md-3" style="padding-top: 12%">
 
 										<table class="table table-striped" border="1">
 											<thead>
@@ -86,7 +81,7 @@
 										</table>
 
 									</div>
-									<div class="col-lg-8 col-md-8">
+									<div class="col-lg-9 col-md-9">
 										<nvd3 options="options" data="data"></nvd3>
 									</div>
 
