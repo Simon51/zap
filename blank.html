@@ -41,153 +41,178 @@
 		<nav class="navbar navbar-default navbar-static-top" role="navigation"
 			style="margin-bottom: 0">
 			<div class="navbar-header">
-				<img  src="zap.png" width="50" height="50"> 
-				<a class="navbar-brand" href="index.html">OWASP ZAP Report </a>
+				<img src="zap.png" width="50" height="50"> <a
+					class="navbar-brand" href="index.html">OWASP ZAP Report </a>
 			</div>
 		</nav>
 
 		<!-- Page Content -->
-		
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12">
-						<div ng-app="app">
-							<h1 class="page-header">Rapport ZAP</h1>
-							<div ng-controller="ReportCtrl">
-								<div class="container col-lg-12 col-md-12">
-									<div class="col-lg-3 col-md-3" style="padding-top: 12%">
 
-										<table class="table table-striped" border="1">
-											<thead>
-												<tr>
-													<th>Criticité des failles</th>
-													<th>Présence en pourcentage</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="info bold">Low : {{values[0]}}</td>
-													<td border="4">{{low}}%</td>
-												</tr>
-												<tr>
-													<td class="warning bold">Med : {{values[1]}}</td>
-													<td>{{med}}%</td>
-												</tr>
-												<tr>
-													<td class="danger bold">High :{{values[2]}}</td>
-													<td>{{high}}%</td>
-												</tr>
-											</tbody>
-										</table>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div ng-app="app">
+						<h1 class="page-header">Rapport ZAP</h1>
+						<div ng-controller="ReportCtrl">
+							<div class="container col-lg-12 col-md-12">
+								<div class="col-lg-3 col-md-3" style="padding-top: 12%">
 
-									</div>
-									<div class="col-lg-9 col-md-9">
-										<nvd3 options="options" data="data"></nvd3>
-									</div>
-
-								</div>
-
-								<div
-									class="container col-lg-12 col-md-12 col-lg-offset-0 page-header">
 									<table class="table table-striped" border="1">
 										<thead>
 											<tr>
-												<th class="sorting-desc">
-
-													<center>URL touchées</center>
-												</th>
-												<th class="sorting-desc">
-													<center>Type de la faille</center>
-												</th>
+												<th>Criticité des failles</th>
+												<th>Présence en pourcentage</th>
 											</tr>
 										</thead>
+										<tbody>
+											<tr>
+												<td class="info bold">Low : {{values[0]}}</td>
+												<td border="4">{{low}}%</td>
+											</tr>
+											<tr>
+												<td class="warning bold">Med : {{values[1]}}</td>
+												<td>{{med}}%</td>
+											</tr>
+											<tr>
+												<td class="danger bold">High :{{values[2]}}</td>
+												<td>{{high}}%</td>
+											</tr>
 										</tbody>
-										{{contentArray}}
-										<tr ng-repeat='site in content'>
-											<td>
-											
-												<div class="bold">
-													<a href="{{site._name}}">{{site._name}}</a>
-												</div>
-											</td>
-											<td>
-											
-											<span ng-repeat='alertitem in site.alerts.alertitem'>
-											
-													<div class="form-actions">
-														<div ng-if="alertitem.riskcode ==='1'">
-															<button type="button" class="btn btn-info"
-																ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}
-															</button>
-															<div uib-collapse="isCollapsed" horizontal>
-																<div class="well well-lg">
-																	<uib-tabset active="active"> <uib-tab
-																		index="0" heading="Description"> <br>
-																	<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
-																	</uib-tab> <uib-tab index="1" heading="Solution"> <br>
-																	<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
-																	</uib-tab> </uib-tabset>
-																</div>
-															</div>
-														</div>
-													</div>
-												
-													<div class="form-actions">
-														<div ng-if="alertitem.riskcode ==='2'">
-															<button type="button" class="btn btn-warning"
-																ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}
-															</button>
-															<div uib-collapse="isCollapsed">
-																<div class="well well-lg">
-
-																	<uib-tabset active="active"> <uib-tab
-																		index="0" heading="Description"> <br>
-																	<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
-																	</uib-tab> <uib-tab index="1" heading="Solution"> <br>
-																	<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
-																	</uib-tab> </uib-tabset>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="form-actions">
-														<div ng-if="alertitem.riskcode ==='3'">
-															<button type="button" class="btn btn-danger"
-																ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}</button>
-															<div uib-collapse="isCollapsed">
-																<div class="well well-lg">
-
-																	<uib-tabset active="active"> <uib-tab
-																		index="0" heading="Description"> <br>
-																	<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
-																	</uib-tab> <uib-tab index="1" heading="Solution"> <br>
-																	<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
-																	</uib-tab> </uib-tabset>
-																</div>
-															</div>
-														</div>
-													</div>
-											</span>
-							
-											</td>
-
-										</tr>
-										</tbody>
-										</div>
-										</div>
 									</table>
+
 								</div>
+								<div class="col-lg-9 col-md-9">
+									<nvd3 options="options" data="data"></nvd3>
+								</div>
+
+							</div>
+
+							<div
+								class="container col-lg-12 col-md-12 col-lg-offset-0 page-header">
+								<table class="table table-striped" border="1">
+									<thead>
+										<tr>
+											<th class="sorting-desc">
+
+												<center>URL touchée(s)</center>
+											</th>
+											<th class="sorting-desc">
+												<center>Type de la faille</center>
+											</th>
+										</tr>
+									</thead>
+									</tbody>
+									{{contentArray}}
+									<tr ng-repeat='site in content'>
+										<td>
+
+											<div class="bold">
+												<a href="{{site._name}}">{{site._name}}</a>
+											</div>
+										</td>
+										<td><span ng-repeat='alertitem in site.alerts.alertitem'>
+
+												<div class="form-actions">
+													<div ng-if="alertitem.riskcode ==='1'">
+														<button type="button" class="btn btn-info"
+															ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}
+														</button>
+														<div uib-collapse="isCollapsed" horizontal>
+															<div class="well well-lg">
+																<uib-tabset active="active"> <uib-tab
+																	index="0" heading="Description"> <br>
+																<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
+																</uib-tab> <uib-tab index="1" heading="Solution"> <br>
+
+																<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
+																</uib-tab> <uib-tab index="2" heading="Infos"> <br>
+																	<u>Lien utile:</u> <br>
+																</p>
+																<a src="SkipValidation(alertitem.reference)" ng-bind-html="SkipValidation(alertitem.reference)"></a>
+																<p>
+																	<u>cwe ID:</u> <br>
+																</p>
+																<p ng-bind-html="SkipValidation(alertitem.cweid)"></p>
+																</uib-tab> </uib-tabset>
+
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="form-actions">
+													<div ng-if="alertitem.riskcode ==='2'">
+														<button type="button" class="btn btn-warning"
+															ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}
+														</button>
+														<div uib-collapse="isCollapsed">
+															<div class="well well-lg">
+
+																<uib-tabset active="active"> <uib-tab
+																	index="0" heading="Description"> <br>
+																<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
+																</uib-tab> <uib-tab index="1" heading="Solution"> <br>
+																<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
+																</uib-tab> <uib-tab index="2" heading="Infos"> <br>
+																<p>
+																	<u>Lien utile:</u> <br>
+																</p>
+																<a src="SkipValidation(alertitem.reference)" ng-bind-html="SkipValidation(alertitem.reference)"></a>
+																<p>
+																<p ng-bind-html="SkipValidation(alertitem.cweid)"></p>
+																</uib-tab> </uib-tabset>
+																</uib-tabset>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-actions">
+													<div ng-if="alertitem.riskcode ==='3'">
+														<button type="button" class="btn btn-danger"
+															ng-click="isCollapsed = !isCollapsed">{{alertitem.name}}</button>
+														<div uib-collapse="isCollapsed">
+															<div class="well well-lg">
+
+																<uib-tabset active="active"> <uib-tab
+																	index="0" heading="Description"> <br>
+																<p ng-bind-html="SkipValidation(alertitem.desc)"></p>
+																</uib-tab> <uib-tab index="1" heading="Solution"> <br>
+																<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
+																</uib-tab> <uib-tab index="2" heading="Infos"> <br>
+																<p>
+																	<u>Lien utile:</u> <br>
+																</p>
+																<a src="SkipValidation(alertitem.reference)" ng-bind-html="SkipValidation(alertitem.reference)"></a>
+																<p>
+																	<u>cwe ID:</u> <br>
+																</p>
+																<p ng-bind-html="SkipValidation(alertitem.cweid)"></p>
+																</uib-tab> </uib-tabset>
+																</uib-tabset>
+															</div>
+														</div>
+													</div>
+												</div>
+										</span></td>
+
+									</tr>
+									</tbody>
+									</div>
+									</div>
+								</table>
 							</div>
 						</div>
-
-
 					</div>
-					<!-- /.col-lg-12 -->
+
+
 				</div>
-				<!-- /.row -->
+				<!-- /.col-lg-12 -->
 			</div>
-			<!-- /.container-fluid -->
-		
+			<!-- /.row -->
+		</div>
+		<!-- /.container-fluid -->
+
 
 	</div>
 	<!-- /#wrapper -->
