@@ -7,7 +7,7 @@ var app = angular.module('app',['nvd3','ui.bootstrap']);
 app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 	$scope.isArray = angular.isArray;
 	$scope.isCollapsed = true;
-	$http.get("ReportForSpiderWithActiveScan-17-11-07.xml", {
+	$http.get("grosZap.xml", {
 //ReportForSpiderWithActiveScan-17-11-07.xml
 
 		transformResponse:function(data) {
@@ -97,8 +97,8 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 			chart: {
 
 				type: 'pieChart',
-				height: 350,
-				width: 550,
+				height:450,
+				width: 650,
 				x: function(d){return d.key;},
 				y: function(d){return d.y;},
 				showLabels: true,
