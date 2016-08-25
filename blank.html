@@ -41,7 +41,7 @@
 		<nav class="navbar navbar-default navbar-static-top" role="navigation"
 			style="margin-bottom: 0">
 			<div class="navbar-header">
-				<img src="zap.png" width="50" height="50"> <a
+				<img src="res/zap.png" width="50" height="50"> <a
 					class="navbar-brand" href="index.html">OWASP ZAP Report </a>
 			</div>
 		</nav>
@@ -61,22 +61,28 @@
 										<thead>
 											<tr>
 												<th>Criticité des failles</th>
+												<th>Nombre de failles</th>
 												<th>Présence en pourcentage</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td class="info bold">Low : {{values[0]}}</td>
-												<td border="4">{{low}}%</td>
+												<td class="danger bold">High :{{values[2]}}</td>
+												<td>{{nbHigh}}</td>
+												<td>{{high}}%</td>
 											</tr>
 											<tr>
 												<td class="warning bold">Med : {{values[1]}}</td>
+												<td>{{nbMed}}</td>
 												<td>{{med}}%</td>
 											</tr>
 											<tr>
-												<td class="danger bold">High :{{values[2]}}</td>
-												<td>{{high}}%</td>
+												<td class="info bold">Low : {{values[0]}}</td>
+												<td>{{nbLow}}</td>
+												<td border="4">{{low}}%</td>
 											</tr>
+
+
 										</tbody>
 									</table>
 
@@ -126,15 +132,30 @@
 
 																<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
 																</uib-tab> <uib-tab index="2" heading="Infos"> <br>
-																	<u>Lien utile:</u> <br>
+																<span><u>Nombres d'occurrences de la faille:</u></span>
+																<span ng-bind-html="SkipValidation(alertitem.count)">
+																</span> <br>
+																<br>
+																<u>Lien utile:</u> <br>
 																</p>
-																<a src="SkipValidation(alertitem.reference)" ng-bind-html="SkipValidation(alertitem.reference)"></a>
+																<a src="SkipValidation(alertitem.reference)"
+																	ng-bind-html="SkipValidation(alertitem.reference)"></a>
 																<p>
 																	<u>cwe ID:</u> <br>
 																</p>
 																<p ng-bind-html="SkipValidation(alertitem.cweid)"></p>
-																</uib-tab> </uib-tabset>
-
+																</uib-tab> <uib-tab index="3" heading="URLs"> <br>
+																<span
+																	ng-repeat='instance in alertitem.instances.instance'>
+																	<p>
+																		<span>URL touchée :</span> <a
+																			src="SkipValidation(instance.uri)"
+																			ng-bind-html="SkipValidation(instance.uri)"></a>
+																	</p> <span> Paramètre : </span> <a
+																	src="SkipValidation(instance.param)"
+																	ng-bind-html="SkipValidation(instance.param)"></a>
+																</p> <br>
+																</span> </uib-tab> </uib-tabset>
 
 															</div>
 														</div>
@@ -156,13 +177,31 @@
 																<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
 																</uib-tab> <uib-tab index="2" heading="Infos"> <br>
 																<p>
-																	<u>Lien utile:</u> <br>
+																	<span><u> Nombres d'occurrences de la
+																			faille:</u></span> <span
+																		ng-bind-html="SkipValidation(alertitem.count)">
+																	</span> <br>
+																	<br> <u>Lien utile:</u> <br>
 																</p>
-																<a src="SkipValidation(alertitem.reference)" ng-bind-html="SkipValidation(alertitem.reference)"></a>
+																<a src="SkipValidation(alertitem.reference)"
+																	ng-bind-html="SkipValidation(alertitem.reference)"></a>
 																<p>
+																<p>
+																	<u>cwe ID:</u> <br>
+																</p>
 																<p ng-bind-html="SkipValidation(alertitem.cweid)"></p>
-																</uib-tab> </uib-tabset>
-																</uib-tabset>
+																</uib-tab> <uib-tab index="3" heading="URLs"> <br>
+																<span
+																	ng-repeat='instance in alertitem.instances.instance'>
+																	<p>
+																		<span>URL touchée :</span> <a
+																			src="SkipValidation(instance.uri)"
+																			ng-bind-html="SkipValidation(instance.uri)"></a>
+																	</p> <span> Paramètre : </span> <a
+																	src="SkipValidation(instance.param)"
+																	ng-bind-html="SkipValidation(instance.param)"></a>
+																</p> <br>
+																</span> </uib-tab> </uib-tabset>
 															</div>
 														</div>
 													</div>
@@ -181,15 +220,30 @@
 																<p ng-bind-html="SkipValidation(alertitem.solution)"></p>
 																</uib-tab> <uib-tab index="2" heading="Infos"> <br>
 																<p>
-																	<u>Lien utile:</u> <br>
+																	<span><u> Nombres d'occurrences de la
+																			faille:</u></span> <span
+																		ng-bind-html="SkipValidation(alertitem.count)">
+																	</span> <br>
+																	<br> <u>Lien utile:</u> <br>
 																</p>
-																<a src="SkipValidation(alertitem.reference)" ng-bind-html="SkipValidation(alertitem.reference)"></a>
+																<a src="SkipValidation(alertitem.reference)"
+																	ng-bind-html="SkipValidation(alertitem.reference)"></a>
 																<p>
 																	<u>cwe ID:</u> <br>
 																</p>
 																<p ng-bind-html="SkipValidation(alertitem.cweid)"></p>
-																</uib-tab> </uib-tabset>
-																</uib-tabset>
+																</uib-tab> <uib-tab index="3" heading="URLs"> <br>
+																<span
+																	ng-repeat='instance in alertitem.instances.instance'>
+																	<p>
+																		<span>URL touchée :</span> <a
+																			src="SkipValidation(instance.uri)"
+																			ng-bind-html="SkipValidation(instance.uri)"></a>
+																	</p> <span> Paramètre : </span> <a
+																	src="SkipValidation(instance.param)"
+																	ng-bind-html="SkipValidation(instance.param)"></a>
+																</p> <br>
+																</span> </uib-tab> </uib-tabset>
 															</div>
 														</div>
 													</div>
@@ -229,8 +283,8 @@
 	<script src="dist/js/sb-admin-2.js"></script>
 	<script type="text/javascript"
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-	<script type="text/javascript" src="xml2json.js"></script>
-	<script type="text/javascript" src="xml2json.min.js"></script>
+	<script type="text/javascript" src="js/xml2json.js"></script>
+	<script type="text/javascript" src="js/xml2json.min.js"></script>
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
 		charset="utf-8"></script>
@@ -240,7 +294,7 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.5/angular-nvd3.min.js"></script>
 	<script type="text/javascript"
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
-	<script type="text/javascript" src="angular-sanitize.js"></script>
+	<script type="text/javascript" src="js/angular-sanitize.js"></script>
 	<script type="text/javascript"
 		src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.2.js"></script>
 

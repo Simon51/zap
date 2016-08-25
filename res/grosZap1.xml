@@ -1,0 +1,442 @@
+<?xml version="1.0"?><OWASPZAPReport version="2.5.0" generated="jeu., 25 aout 2016 08:44:17">
+<site name="http://villeenherbes.over-blog.com" host="villeenherbes.over-blog.com" port="80" ssl="false"><alerts><alertitem>
+  <pluginid>10017</pluginid>
+  <alert>Inclusion de fichier source JavaScript inter-domaine</alert>
+  <name>Inclusion de fichier source JavaScript inter-domaine</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;The page includes one or more script files from a third-party domain.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://connect.over-blog.com/ping/1444371/isConnected</param>
+  <evidence>&lt;script src=&quot;http://connect.over-blog.com/ping/1444371/isConnected&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/h.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/h.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/slideshow.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/slideshow.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://assets.over-blog-kiwi.com/blog/js/index.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/blog/js/index.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://w.estat.com/js/whap.js</param>
+  <evidence>&lt;script type=&quot;text/javascript&quot; src=&quot;http://w.estat.com/js/whap.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/sharebar.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/sharebar.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js</param>
+  <evidence>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>http://derik.secretmedia.com/derik.js?clientId=3</param>
+  <evidence>&lt;script type=&quot;text/javascript&quot; async src=&quot;http://derik.secretmedia.com/derik.js?clientId=3&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js</param>
+  <evidence>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>//assets.over-blog-kiwi.com/themes/jquery/fancybox2.1.2/jquery.fancybox.pack.js</param>
+  <evidence>&lt;script src=&quot;//assets.over-blog-kiwi.com/themes/jquery/fancybox2.1.2/jquery.fancybox.pack.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://connect.over-blog.com/ping/1444371/isConnected</param>
+  <evidence>&lt;script src=&quot;http://connect.over-blog.com/ping/1444371/isConnected&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/h.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/h.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/slideshow.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/slideshow.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://assets.over-blog-kiwi.com/blog/js/index.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/blog/js/index.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://w.estat.com/js/whap.js</param>
+  <evidence>&lt;script type=&quot;text/javascript&quot; src=&quot;http://w.estat.com/js/whap.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/sharebar.js?v1.4.13.0</param>
+  <evidence>&lt;script src=&quot;http://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/js/sharebar.js?v1.4.13.0&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js</param>
+  <evidence>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>http://derik.secretmedia.com/derik.js?clientId=3</param>
+  <evidence>&lt;script type=&quot;text/javascript&quot; async src=&quot;http://derik.secretmedia.com/derik.js?clientId=3&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js</param>
+  <evidence>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>//assets.over-blog-kiwi.com/themes/jquery/fancybox2.1.2/jquery.fancybox.pack.js</param>
+  <evidence>&lt;script src=&quot;//assets.over-blog-kiwi.com/themes/jquery/fancybox2.1.2/jquery.fancybox.pack.js&quot;&gt;&lt;/script&gt;</evidence>
+  </instance>
+  </instances>
+  <count>2078</count>
+  <solution>&lt;p&gt;Ensure JavaScript source files are loaded from only trusted sources, and the sources can&apos;t be controlled by end users of the application.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;&lt;/p&gt;</reference>
+  <cweid>829</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10016</pluginid>
+  <alert>Protection XSS du navigateur Internet non activ&#233;e</alert>
+  <name>Protection XSS du navigateur Internet non activ&#233;e</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;La protection XSS du navigateur Internet n&apos;est pas activ&#233;e, ou est d&#233;sactiv&#233;e par la configuration de l&apos;en-t&#234;te de r&#233;ponse HTTP &apos;X-XSS-Protection&apos; sur le serveur web&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/mail/valid-</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/mail/subscribe</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/07/retour-sur-la-permanence-de-juillet.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/permanence-de-juillet-au-jardin-faure-midable.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/permanence-de-juin-au-jardin-faure-midable.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/poursuite-de-l-amenagement-du-jardin-faure-midable.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/ateliers-de-jardinage-intergenerationnels-a-la-residence-les-tourelles.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/les-enfants-d-elie-faure-pretent-main-forte-au-foyer-residence-des-tourelles.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/retour-sur-le-4eme-chantier-d-amenagement-du-jardin-faur-midable.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/04/le-jardin-faure-midable-en-chantier.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/04/reprise-des-ateliers-de-jardinage-foyer-residence-des-tourelles.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/03/3eme-chantier-participatif-jardin-fauremidable.html</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/l%27espace%20elie%20faure/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/les%20actions%20passees/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/jardinage%20en%20maison%20de%20retraite/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/page/2</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/jardinage%20en%20prison/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/page/3</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  </instances>
+  <count>180</count>
+  <solution>&lt;p&gt;Assurez-vous que le filtre XSS du navigateur internet est activ&#233;, en renseignant l&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection &#224; &apos;1&apos;.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection autorise le serveur internet &#224; activer ou d&#233;sactiver le m&#233;canisme de protection XSS du navigateur internet. Les valeurs suivantes tenteraient d&apos;activer la protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; mode = block&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; report = http://www.example.com/xss&lt;/p&gt;&lt;p&gt;Les valeurs suivantes d&#233;sactiveraient cette protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 0&lt;/p&gt;&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection est actuellement support&#233;e par Internet Explorer, Chrome et Safari (WebKit). &lt;/p&gt;&lt;p&gt;Notez que cette alerte n&apos;est d&#233;clench&#233;e que si le corps de r&#233;ponse pouvaient contenir une charge utile XSS (avec un type de contenu texte, d&apos;une longueur diff&#233;rente de z&#233;ro).&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet&lt;/p&gt;&lt;p&gt;https://blog.veracode.com/2014/03/guidelines-for-setting-security-headers/&lt;/p&gt;</reference>
+  <cweid>933</cweid>
+  <wascid>14</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/robots.txt</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/sitemap.xml</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/07/retour-sur-la-permanence-de-juillet.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/permanence-de-juillet-au-jardin-faure-midable.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/permanence-de-juin-au-jardin-faure-midable.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/poursuite-de-l-amenagement-du-jardin-faure-midable.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/ateliers-de-jardinage-intergenerationnels-a-la-residence-les-tourelles.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/les-enfants-d-elie-faure-pretent-main-forte-au-foyer-residence-des-tourelles.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/retour-sur-le-4eme-chantier-d-amenagement-du-jardin-faur-midable.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/04/le-jardin-faure-midable-en-chantier.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/04/reprise-des-ateliers-de-jardinage-foyer-residence-des-tourelles.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/03/3eme-chantier-participatif-jardin-fauremidable.html</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/l%27espace%20elie%20faure/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/les%20actions%20passees/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/jardinage%20en%20maison%20de%20retraite/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/page/2</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/jardinage%20en%20prison/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/page/3</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>180</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options Header Not Set</alert>
+  <name>X-Frame-Options Header Not Set</name>
+  <riskcode>2</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Medium (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Frame-Options n&apos;est pas incluse dans la r&#233;ponse HTTP pour prot&#233;ger contre les attaques de &apos;ClickJacking&apos;.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/07/retour-sur-la-permanence-de-juillet.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/permanence-de-juillet-au-jardin-faure-midable.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/permanence-de-juin-au-jardin-faure-midable.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/06/poursuite-de-l-amenagement-du-jardin-faure-midable.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/ateliers-de-jardinage-intergenerationnels-a-la-residence-les-tourelles.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/les-enfants-d-elie-faure-pretent-main-forte-au-foyer-residence-des-tourelles.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/05/retour-sur-le-4eme-chantier-d-amenagement-du-jardin-faur-midable.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/04/le-jardin-faure-midable-en-chantier.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/04/reprise-des-ateliers-de-jardinage-foyer-residence-des-tourelles.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/2016/03/3eme-chantier-participatif-jardin-fauremidable.html</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/l%27espace%20elie%20faure/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/les%20actions%20passees/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/jardinage%20en%20maison%20de%20retraite/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/page/2</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/jardinage%20en%20prison/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/page/3</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/chroniques%20litteraires/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/tag/les%20projets%20en%20cours/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  </instances>
+  <count>177</count>
+  <solution>&lt;p&gt;Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it&apos;s set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it&apos;s part of a FRAMESET) then you&apos;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. ALLOW-FROM allows specific websites to frame the web page in supported web browsers).&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>40012</pluginid>
+  <alert>Cross Site Scripting (r&#233;fl&#233;chi)</alert>
+  <name>Cross Site Scripting (r&#233;fl&#233;chi)</name>
+  <riskcode>3</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>High (Medium)</riskdesc>
+  <desc>&lt;p&gt;Le cross-site Scripting (XSS) est une technique d&apos;attaque consistant &#224; retourner du code fourni par l&apos;attaquant &#224; une instance de navigateur d&apos;un utilisateur. Une instance de navigateur peut &#234;tre un navigateur standard, un objet navigateur incorpor&#233; dans un produit logiciel (p.ex. le navigateur dans WinAmp), un lecteur RSS ou un client de messagerie. Le code lui-m&#234;me est g&#233;n&#233;ralement &#233;crit en HTML/JavaScript, mais peut &#234;tre aussi en VBScript, ActiveX, Java, Flash ou toute autre technologie support&#233;e par les navigateurs.&lt;/p&gt;&lt;p&gt;Lorsqu&apos;un pirate parvient &#224; faire ex&#233;cuter son code par le navigateur d&apos;un utilisateur, le code s&apos;ex&#233;cute dans le contexte de s&#233;curit&#233; (ou zone) du site web h&#233;bergeur. Avec ce niveau de privil&#232;ge, le code a la capacit&#233; de lire, modifier et transmettre toutes les donn&#233;es sensibles accessibles par le navigateur. Un utilisateur sujet au Cross-site Scripting pourrait voir son compte pirat&#233; (vol de cookie), son navigateur redirig&#233; vers un autre site, ou &#233;ventuellement voir appara&#238;tre du contenu frauduleux envoy&#233; par le site internet qu&apos;ils visitent. Les attaques par Cross-site Scripting compromettent fondamentalement la relation de confiance entre un utilisateur et le site web. Les applications utilisant des instances d&apos;objet de navigateur, et qui chargent du contenu depuis le syst&#232;me de fichiers, peuvent ex&#233;cuter du code dans le p&#233;rim&#232;tre de confiance de l&apos;ordinateur, mettant ainsi en danger le syst&#232;me.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Il existe trois types d&apos;attaques par Cross-site Scripting : non persistant, persistant et bas&#233; sur les DOM.&lt;/p&gt;&lt;p&gt;Les attaques non persistantes et celles bas&#233;es sur les DOM n&#233;cessitent qu&apos;un utilisateur visite un lien incorporant un code malveillant, ou visite une page web malveillante contenant un formulaire internet, qui, une fois publi&#233; sur le site vuln&#233;rable, permettra l&apos;attaque proprement dite. Un formulaire malveillant sera souvent utilis&#233; lorsque la ressource vuln&#233;rable n&apos;accepte que les requ&#234;tes HTTP POST. Dans un tel cas, le formulaire peut &#234;tre envoy&#233; automatiquement, sans que la victime n&apos;en ait conscience (p. ex. &#224; l&apos;aide de JavaScript). En cliquant sur le lien malveillant ou en soumettant le formulaire malveillant, le code XSS s&apos;affichera en retour et sera interpr&#233;t&#233; et ex&#233;cut&#233; par le navigateur de l&apos;utilisateur. Une autre technique pour envoyer des requ&#234;tes presque arbitraires (GET et POST) consiste &#224; utiliser un client int&#233;gr&#233;, tel que Adobe Flash.&lt;/p&gt;&lt;p&gt;Les attaques persistantes se produisent lorsque le code malveillant est envoy&#233; &#224; un site internet o&#249; il est stock&#233; pendant un certain temps. Des exemples de cibles favorites des pirates sont les publications sur les tableaux de messages, les messages de courrier &#233;lectronique et les logiciels de tchat internet. Aucune interaction avec un quelconque site/lien suppl&#233;mentaire (par exemple, un site de pirate ou un lien malveillant envoy&#233; par e-mail) n&apos;est requis de la part de l&apos;utilisateur sans m&#233;fiance, il suffit de visualiser la page internet contenant le code.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>form[name]</param>
+  <attack>&quot;&gt;&lt;script&gt;alert(1);&lt;/script&gt;</attack>
+  <evidence>&quot;&gt;&lt;script&gt;alert(1);&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>form[email]</param>
+  <attack>&quot;&gt;&lt;script&gt;alert(1);&lt;/script&gt;</attack>
+  <evidence>&quot;&gt;&lt;script&gt;alert(1);&lt;/script&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://villeenherbes.over-blog.com/contact</uri>
+  <param>form[title]</param>
+  <attack>&quot;&gt;&lt;script&gt;alert(1);&lt;/script&gt;</attack>
+  <evidence>&quot;&gt;&lt;script&gt;alert(1);&lt;/script&gt;</evidence>
+  </instance>
+  </instances>
+  <count>3</count>
+  <solution>&lt;p&gt;Phase: Architecture et Design&lt;/p&gt;&lt;p&gt;Utilisez une librairie ou un framework approuv&#233; qui ne permet pas cette vuln&#233;rabilit&#233;, ou qui contient des fonctionnalit&#233;s permettant d&apos;&#233;viter plus facilement cette vuln&#233;rabilit&#233;.&lt;/p&gt;&lt;p&gt;Quelques exemples de biblioth&#232;ques et de frameworks facilitant l&apos;encodage appropri&#233; des pages internet sont: la biblioth&#232;que Microsoft Anti-XSS, le module d&apos;encodage OWASP ESAPI, et Apache Wicket.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Phases: Impl&#233;mentation; Architecture et Design&lt;/p&gt;&lt;p&gt;Tenez compte du contexte dans lequel vos donn&#233;es seront utilis&#233;es et de l&apos;encodage qui sera attendu. Ceci est particuli&#232;rement important lors de la transmission de donn&#233;es entre les diff&#233;rents composants, ou lors de la g&#233;n&#233;ration de sorties qui peuvent contenir plusieurs encodages en m&#234;me temps, comme des pages internet ou des messages &#233;lectroniques multi-parties. &#201;tudiez tous les protocoles de communication et les repr&#233;sentations de donn&#233;es attendus pour d&#233;terminer les strat&#233;gies de codage requis.&lt;/p&gt;&lt;p&gt;Pour toutes les donn&#233;es qui seront affich&#233;es sur une autre page web, en particulier toutes les donn&#233;es qui ont &#233;t&#233; re&#231;ues de l&apos;ext&#233;rieur, utilisez l&apos;encodage appropri&#233; pour tous les caract&#232;res non alphanum&#233;riques.&lt;/p&gt;&lt;p&gt;Consultez le XSS Prevention Cheat Sheet pour plus de d&#233;tails sur les types d&apos;encodage et d&apos;&#233;chappement dont vous pouvez avoir besoin.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Phase : Architecture et Design&lt;/p&gt;&lt;p&gt;Pour tous les contr&#244;les de s&#233;curit&#233; effectu&#233;s du c&#244;t&#233; client, veillez &#224; ce que ces contr&#244;les soient r&#233;it&#233;r&#233;s du c&#244;t&#233; serveur &#233;galement, afin d&apos;&#233;viter la faille CWE-602. Les agresseurs peuvent contourner les contr&#244;les c&#244;t&#233; client en modifiant les valeurs apr&#232;s que ces contr&#244;les aient &#233;t&#233; effectu&#233;s, ou en changeant le client afin d&apos;en retirer compl&#232;tement les contr&#244;les. Ensuite, ces valeurs modifi&#233;es seraient soumises au serveur.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Le cas &#233;ch&#233;ant, utilisez des m&#233;canismes structur&#233;s appliquant automatiquement la s&#233;paration entre le code et les donn&#233;es. Ces m&#233;canismes peuvent &#234;tre en mesure de fournir automatiquement la pr&#233;sentation, le codage et la validation ad&#233;quat, au lieu de se fier au d&#233;veloppeur pour r&#233;aliser ces fonctionnalit&#233;s pour chaque champ de sortie g&#233;n&#233;r&#233;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Phase: Impl&#233;mentation&lt;/p&gt;&lt;p&gt;Pour chaque page internet g&#233;n&#233;r&#233;e, utilisez et sp&#233;cifiez un encodage de cha&#238;nes de caract&#232;res comme ISO-8859-1 ou UTF-8. Quand aucun codage n&apos;est sp&#233;cifi&#233;, le navigateur web tente de deviner quel encodage est effectivement utilis&#233; dans la page web et peut choisir un codage erron&#233;. Ceci peut pousser le navigateur internet &#224; traiter sp&#233;cialement certaines s&#233;quences, exposant ainsi le client &#224; de subtiles attaques XSS. Voir CWE-116 pour des mesures de r&#233;duction de risque plus li&#233;es &#224; l&apos;encodage / l&apos;&#233;chappement.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Pour aider &#224; r&#233;duire les attaques XSS contre le cookie de session de l&apos;utilisateur, fixez la valeur du cookie &#224; HttpOnly. Dans les navigateurs prennant en charge la fonctionnalit&#233; HttpOnly (telles que les versions les plus r&#233;centes d&apos;Internet Explorer et de Firefox), cet attribut peut &#233;viter que le cookie de session de l&apos;utilisateur soit accessible &#224; des scripts malveillants utilisant document.cookie c&#244;t&#233; client. Ce n&apos;est toutefois pas une solution compl&#232;te, car HttpOnly n&apos;est pas support&#233; par tous les navigateurs. Plus important encore, XMLHTTPRequest et d&apos;autres puissantes  technologies de navigateur fournissent un acc&#232;s en lecture aux en-t&#234;tes HTTP, y compris &#224; l&apos;en-t&#234;te Set-Cookie, dans laquelle la balise HttpOnly est d&#233;finie.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Supposez que toutes les entr&#233;es sont malveillantes. Utilisez une strat&#233;gie de validation des entr&#233;es bas&#233;e sur le principe &quot;n&apos;accepter que le bon&quot;, c&apos;est-&#224;-dire utilisez une liste blanche des entr&#233;es acceptables se conformant strictement aux sp&#233;cifications. Rejetez toute entr&#233;e ne se conformant pas strictement aux sp&#233;cifications, ou transformez-la en une valeur qui soit conforme. Ne vous fiez pas exclusivement &#224; la recherche d&apos;entr&#233;es malveillantes ou incorrectes (par exemple, ne comptez pas sur une liste noire). Toutefois, les listes noires peuvent &#234;tre utiles pour d&#233;tecter les attaques potentielles ou pour d&#233;terminer quelles entr&#233;es sont si mal form&#233;es qu&apos;elles devraient &#234;tre rejet&#233;es purement et simplement.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Lorsque vous effectuez une validation d&apos;entr&#233;e, consid&#233;rez toutes les propri&#233;t&#233;s potentiellement pertinentes, comme la longueur, le type d&apos;entr&#233;e, la gamme compl&#232;te des valeurs acceptables, les entr&#233;es manquantes ou d&#233;fectueuses, la syntaxe, la coh&#233;rence dans des domaines connexes et la conformit&#233; aux r&#232;gles m&#233;tier. Comme exemple de logique de r&#232;gle m&#233;tier, &quot;bateau&quot; peut &#234;tre syntaxiquement valide car elle ne contient que des caract&#232;res alphanum&#233;riques, mais elle n&apos;est pas valide si des couleurs sont attendues, telles que &quot;rouge&quot; ou &quot;bleu&quot;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Veillez &#224; effectuer une validation d&apos;entr&#233;e &#224; des interfaces bien d&#233;finies au sein de l&apos;application. Ceci aidera &#224; prot&#233;ger l&apos;application, m&#234;me si un composant est r&#233;utilis&#233; ou d&#233;plac&#233; ailleurs.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://projects.webappsec.org/Cross-Site-Scripting&lt;/p&gt;&lt;p&gt;http://cwe.mitre.org/data/definitions/79.html&lt;/p&gt;</reference>
+  <cweid>79</cweid>
+  <wascid>8</wascid>
+</alertitem>
+</alerts></site></OWASPZAPReport>

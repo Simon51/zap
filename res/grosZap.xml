@@ -1,0 +1,547 @@
+<?xml version="1.0"?><OWASPZAPReport version="2.5.0" generated="mer., 24 aout 2016 10:04:34">
+<site name="http://jeanne-plante.com" host="jeanne-plante.com" port="80" ssl="false"><alerts><alertitem>
+  <pluginid>10010</pluginid>
+  <alert>Cookie No HttpOnly Flag</alert>
+  <name>Cookie No HttpOnly Flag</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/sitemap.xml</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/sitemap.xml</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt/</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt/</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=71</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=71</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=14</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=14</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=487</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=487</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=459</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=459</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=11</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=11</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=596</uri>
+  <param>mediaplanBAK</param>
+  <evidence>Set-Cookie: mediaplanBAK</evidence>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=596</uri>
+  <param>mediaplan</param>
+  <evidence>Set-Cookie: mediaplan</evidence>
+  </instance>
+  </instances>
+  <count>946</count>
+  <solution>&lt;p&gt;Ensure that the HttpOnly flag is set for all cookies.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://www.owasp.org/index.php/HttpOnly&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>13</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10016</pluginid>
+  <alert>Protection XSS du navigateur Internet non activ&#233;e</alert>
+  <name>Protection XSS du navigateur Internet non activ&#233;e</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;La protection XSS du navigateur Internet n&apos;est pas activ&#233;e, ou est d&#233;sactiv&#233;e par la configuration de l&apos;en-t&#234;te de r&#233;ponse HTTP &apos;X-XSS-Protection&apos; sur le serveur web&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=71</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=14</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=487</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=459</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=11</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=596</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=12</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=294</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=15</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/sitemap.xml/</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=874&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=884&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=882&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=916&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=980&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=913&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=894&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=895&amp;post_type=show</uri>
+  <param>X-XSS-Protection</param>
+  </instance>
+  </instances>
+  <count>208</count>
+  <solution>&lt;p&gt;Assurez-vous que le filtre XSS du navigateur internet est activ&#233;, en renseignant l&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection &#224; &apos;1&apos;.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection autorise le serveur internet &#224; activer ou d&#233;sactiver le m&#233;canisme de protection XSS du navigateur internet. Les valeurs suivantes tenteraient d&apos;activer la protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; mode = block&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; report = http://www.example.com/xss&lt;/p&gt;&lt;p&gt;Les valeurs suivantes d&#233;sactiveraient cette protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 0&lt;/p&gt;&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection est actuellement support&#233;e par Internet Explorer, Chrome et Safari (WebKit). &lt;/p&gt;&lt;p&gt;Notez que cette alerte n&apos;est d&#233;clench&#233;e que si le corps de r&#233;ponse pouvaient contenir une charge utile XSS (avec un type de contenu texte, d&apos;une longueur diff&#233;rente de z&#233;ro).&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet&lt;/p&gt;&lt;p&gt;https://blog.veracode.com/2014/03/guidelines-for-setting-security-headers/&lt;/p&gt;</reference>
+  <cweid>933</cweid>
+  <wascid>14</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt/</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=71</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=14</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=487</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=459</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=11</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=596</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=12</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=294</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=15</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?feed=rss2</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?feed=rss2&amp;page_id=9</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?feed=comments-rss2</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/custom-facebook-feed/css/cff-style.css?ver=2.4.1.1</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-gram/assets/css/instagram.css?ver=1.4.3</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-gram/assets/swipebox/swipebox.min.css?ver=1.3.0</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-shortcodes/assets/css/shortcodes.min.css?ver=1.5.1</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-tour-dates/assets/css/tour-dates.min.css?ver=1.1.5</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/themes/musicpro/css/jplayer.css?ver=2.1.0</uri>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>295</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>X-Frame-Options Header Not Set</alert>
+  <name>X-Frame-Options Header Not Set</name>
+  <riskcode>2</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Medium (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Frame-Options n&apos;est pas incluse dans la r&#233;ponse HTTP pour prot&#233;ger contre les attaques de &apos;ClickJacking&apos;.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/robots.txt/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=71</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=14</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=487</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=459</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=11</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=596</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=12</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=294</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?page_id=15</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/sitemap.xml/</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=874&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=884&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=882&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=916&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=980&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=913&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=894&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/?p=895&amp;post_type=show</uri>
+  <param>X-Frame-Options</param>
+  </instance>
+  </instances>
+  <count>208</count>
+  <solution>&lt;p&gt;Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it&apos;s set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it&apos;s part of a FRAMESET) then you&apos;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. ALLOW-FROM allows specific websites to frame the web page in supported web browsers).&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>40018</pluginid>
+  <alert>Injection SQL</alert>
+  <name>Injection SQL</name>
+  <riskcode>3</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>High (Medium)</riskdesc>
+  <desc>&lt;p&gt;Une injection SQL peut &#234;tre possible.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-comments-post.php</uri>
+  <param>comment_post_ID</param>
+  <attack>261-2</attack>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Ne faites pas confiance aux entr&#233;es du c&#244;t&#233; client, m&#234;me si des m&#233;canismes de validation sont en place c&#244;t&#233; client. &lt;/p&gt;&lt;p&gt;En g&#233;n&#233;ral, contr&#244;lez du c&#244;t&#233; serveur le type de chaque donn&#233;e.&lt;/p&gt;&lt;p&gt;Si l&apos;application utilise JDBC, utilisez les PreparedStatement ou CallableStatement, avec les param&#232;tres pass&#233;s par &apos;?&apos;&lt;/p&gt;&lt;p&gt;Si l&apos;application utilise ASP, utilisez les Objects de Commande ADO avec un typage fort et des requ&#234;tes param&#233;tr&#233;es.&lt;/p&gt;&lt;p&gt;Si l&apos;utilisation de Proc&#233;dure Stock&#233;es est possible, utilisez-les. &lt;/p&gt;&lt;p&gt;Ne concat&#233;nez *pas* les cha&#238;nes de caract&#232;res dans les requ&#234;tes des proc&#233;dures stock&#233;es, ou utilisez les fonctions &apos;exec&apos;, &apos;exec immediate&apos; ou d&apos;autre fonctions &#233;quivalentes!&lt;/p&gt;&lt;p&gt;Ne cr&#233;ez pas des requ&#234;tes SQL dynamiques par simples concat&#233;nation de cha&#238;nes de caract&#232;res.&lt;/p&gt;&lt;p&gt;&#201;chappez toutes les donn&#233;es re&#231;ues du client.&lt;/p&gt;&lt;p&gt;Appliquez une &apos;liste blanche&apos; des caract&#232;res autoris&#233;s, ou une &apos;liste noir&apos; des caract&#232;res interdits dans les entr&#233;es de l&apos;utilisateur.&lt;/p&gt;&lt;p&gt;Appliquez le principe de moindre privil&#232;ge en utilisant les privil&#232;ges utilisateur minimaux sur la base de donn&#233;e.&lt;/p&gt;&lt;p&gt;En particulier, &#233;vitez l&apos;utilisation des utilisateurs &apos;sa&apos; ou &apos;db-owner&apos;. Ceci n&apos;&#233;vite pas les injections SQL, mais minimise leur impact.&lt;/p&gt;&lt;p&gt;Accordez les plus faibles droits d&apos;acc&#232;s aux bases de donn&#233;es n&#233;cessaires &#224; l&apos;application.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Les r&#233;sultats de la page originale ont &#233;t&#233; reproduits avec succ&#232;s en utilisant l&apos;expression [261-2] comme valeur du param&#232;tre&lt;/p&gt;&lt;p&gt;La valeur du param&#232;tre NOT  en cours de modification est extraite de la sortie HTML &#224; fin de comparaison&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/Top_10_2010-A1&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet&lt;/p&gt;</reference>
+  <cweid>89</cweid>
+  <wascid>19</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>90020</pluginid>
+  <alert>Injection de commande de SE &#224; distance</alert>
+  <name>Injection de commande de SE &#224; distance</name>
+  <riskcode>3</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>High (Medium)</riskdesc>
+  <desc>&lt;p&gt;Technique d&apos;attaque utilis&#233;e pour l&apos;ex&#233;cution non autoris&#233;e de commandes du syst&#232;me d&apos;exploitation. Cette attaque est possible lorsqu&apos;une application accepte des entr&#233;es douteuses pour g&#233;n&#233;rer des commandes de syst&#232;me d&apos;exploitation vuln&#233;rables, sans assainissement correct des donn&#233;es et/ou sans appel correct de programmes externes.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-comments-post.php</uri>
+  <param>akismet_comment_nonce</param>
+  <attack>68065e3449&quot;;sleep 5s;&quot;</attack>
+  </instance>
+  </instances>
+  <count>1</count>
+  <solution>&lt;p&gt;Si possible, utilisez des appels de biblioth&#232;que plut&#244;t que des processus externes pour recr&#233;er les fonctionnalit&#233;s souhait&#233;es.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Ex&#233;cutez votre code dans un &quot;bac &#224; sable&quot; ou un environnement similaire, qui impose des limites strictes entre le processus et le syst&#232;me d&apos;exploitation. Cela peut restreindre efficacement quels fichiers sont accessibles dans un r&#233;pertoire particulier ou lesquels peuvent &#234;tre ex&#233;cut&#233;s par votre logiciel.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Au niveau du syst&#232;me d&apos;exploitation, on peut citer les exemples pour Unix: chroot, AppArmor et SELinux. En g&#233;n&#233;ral, le code g&#233;r&#233; (managed code) peut offrir une certaine protection. Par exemple, java.io.FilePermission dans le SecurityManager de Java permet de sp&#233;cifier des restrictions sur les op&#233;rations de fichiers.&lt;/p&gt;&lt;p&gt;Ceci peut ne pas &#234;tre une solution ad&#233;quate. Par ailleurs, elle limite l&apos;impact au seul syst&#232;me d&apos;exploitation; le reste de votre application peut encore faire l&apos;objet de vuln&#233;rabilit&#233;s.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Autant que possible, ne donnez pas &#224; une tierce partie le contr&#244;le sur des donn&#233;es utilis&#233;es pour g&#233;n&#233;rer une commande &#224; ex&#233;cuter. Par exemple, dans les applications internet, il vaudra mieux stocker la commande localement dans la session plut&#244;t que l&apos;envoyer au client dans un champ de formulaire masqu&#233;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Utilisez une biblioth&#232;que ou un framework certifi&#233; qui ne permet pas &#224; cette faille d&apos;apparaitre ou qui fournit des m&#233;canismes aidant &#224; &#233;viter cette faille.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Par exemple, envisagez d&apos;utiliser le contr&#244;le d&apos;encodage ESAPI ou un outil, une biblioth&#232;que ou un framework semblable. Ceux-ci aideront le programmeur &#224; encoder les sorties d&apos;une mani&#232;re moins sujette aux erreurs.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Si vous avez besoin d&apos;utiliser des cha&#238;nes de requ&#234;te ou des commandes g&#233;n&#233;r&#233;es dynamiquement en d&#233;pit du risque, ins&#233;rez correctement les arguments entre des guillemets et &#233;chappez tous les caract&#232;res sp&#233;ciaux dans ces arguments. L&apos;approche la plus prudente consiste &#224; &#233;chapper ou &#224; filtrer tous les caract&#232;res ne figurant pas dans une liste blanche extr&#234;mement stricte (par exemple, tout ce qui n&apos;est pas un caract&#232;re alphanum&#233;rique ou un espace). Si certains caract&#232;res sp&#233;ciaux sont encore n&#233;cessaires, tels que des espaces, entourez chaque argument par des guillemets apr&#232;s l&apos;&#233;tape de filtrage ou d&apos;&#233;chappement. Prenez garde &#224; l&apos;injection d&apos;arguments.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Si le programme &#224; ex&#233;cuter permet de sp&#233;cifier les arguments dans un fichier d&apos;entr&#233;e ou par l&apos;entr&#233;e standard, alors envisagez d&apos;utiliser ce m&#234;me mode pour passer des arguments plut&#244;t que par la ligne de commande.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Le cas &#233;ch&#233;ant, utilisez des m&#233;canismes structur&#233;s appliquant automatiquement la s&#233;paration entre le code et les donn&#233;es. Ces m&#233;canismes peuvent &#234;tre en mesure de fournir automatiquement la pr&#233;sentation, le codage et la validation ad&#233;quat, au lieu de se fier au d&#233;veloppeur pour r&#233;aliser ces fonctionnalit&#233;s pour chaque champ de sortie g&#233;n&#233;r&#233;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Certains langages offrent de multiples fonctions pouvant &#234;tre utilis&#233;es pour lancer des commandes. Si possible, identifiez toute fonction appelant un interpr&#233;teur de commandes &#224; l&apos;aide d&apos;une seule cha&#238;ne, et remplacez-la par une fonction requ&#233;rant des arguments individuels. Ces fonctions effectuent g&#233;n&#233;ralement une mise entre guillemets et un filtrage appropri&#233; des arguments. Par exemple, en C, la fonction system() accepte une cha&#238;ne qui contient la commande enti&#232;re &#224; ex&#233;cuter, tandis que execl(), execve() et d&apos;autres demandent un tableau de cha&#238;nes, une pour chaque argument. Dans Windows, CreateProcess() accepte uniquement une seule commande &#224; la fois. En Perl, si un tableau d&apos;arguments est fourni &#224; la fonction system(), alors la fonction mettra entre guillemets chacun des arguments.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Supposez que toutes les entr&#233;es sont malveillantes. Utilisez une strat&#233;gie de validation des entr&#233;es bas&#233;e sur le principe &quot;n&apos;accepter que le bon&quot;, c&apos;est-&#224;-dire utilisez une liste blanche des entr&#233;es acceptables se conformant strictement aux sp&#233;cifications. Rejetez toute entr&#233;e ne se conformant pas strictement aux sp&#233;cifications, ou transformez-la en une valeur qui soit conforme. Ne vous fiez pas exclusivement &#224; la recherche d&apos;entr&#233;es malveillantes ou incorrectes (par exemple, ne comptez pas sur une liste noire). Toutefois, les listes noires peuvent &#234;tre utiles pour d&#233;tecter les attaques potentielles ou pour d&#233;terminer quelles entr&#233;es sont si mal form&#233;es qu&apos;elles devraient &#234;tre rejet&#233;es purement et simplement.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Lorsque vous effectuez une validation d&apos;entr&#233;e, consid&#233;rez toutes les propri&#233;t&#233;s potentiellement pertinentes, comme la longueur, le type d&apos;entr&#233;e, la gamme compl&#232;te des valeurs acceptables, les entr&#233;es manquantes ou d&#233;fectueuses, la syntaxe, la coh&#233;rence dans des domaines connexes et la conformit&#233; aux r&#232;gles m&#233;tier. Comme exemple de logique de r&#232;gle m&#233;tier, &quot;bateau&quot; peut &#234;tre syntaxiquement valide, car la cha&#238;ne ne contient que des caract&#232;res alphanum&#233;riques, mais elle n&apos;est pas valide si vous attendez des couleurs telles que &quot;rouge&quot; ou &quot;bleu&quot;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Lors de la construction des cha&#238;nes de commande d&apos;OS, utilisez des listes blanches rigoureuses qui limitent le jeu de caract&#232;res en fonction de la valeur attendue du param&#232;tre dans la requ&#234;te. Vous limiterez ainsi indirectement la port&#233;e d&apos;une attaque, mais cette technique est moins importante qu&apos;un bon encodage et un bon &#233;chappement.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Notez que le codage de sortie, l&apos;&#233;chappement, et la mise entre guillemets est la solution la plus efficace pour pr&#233;venir les injections de commandes d&apos;OS, m&#234;me si la validation d&apos;entr&#233;e peut fournir une certaine d&#233;fense en profondeur. La raison est qu&apos;elle limite efficacement ce qui appara&#238;tra en sortie. La validation des entr&#233;es n&apos;emp&#234;chera pas toujours l&apos;injection de commande d&apos;OS, surtout si vous &#234;tes tenu de supporter des champs de texte libre qui peuvent contenir des caract&#232;res arbitraires. Par exemple, lors de l&apos;appel &#224; un logiciel de messagerie, vous devrez accepter que le champ objet contienne des entr&#233;es potentiellement dangereuses, comme les caract&#232;res &quot;;&quot; et &quot;&gt;&quot;, qui devraient &#234;tre &#233;chapp&#233;s ou trait&#233;s autrement. Dans ce cas, supprimer ce caract&#232;re pourrait r&#233;duire le risque d&apos;injection de  commande d&apos;OS, mais il produirait un comportement incorrect, parce que le champ objet ne serait pas trait&#233; de la fa&#231;on dont l&apos;utilisateur l&apos;attend. Cela peut sembler &#234;tre un inconv&#233;nient mineur, mais il pourrait &#234;tre plus important lorsque le programme s&apos;appuie sur des lignes d&apos;objet bien structur&#233; afin de transmettre des messages &#224; d&apos;autres composants.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;M&#234;me si vous faites une erreur dans votre validation (par exemple, oublier un champ de saisie parmi 100 autres), un codage appropri&#233; sera toujours susceptible de vous prot&#233;ger contre les attaques bas&#233;es sur l&apos;injection. Tant qu&apos;elle n&apos;est pas utilis&#233;e seule, la validation des entr&#233;es reste une technique utile, car elle peut significativement r&#233;duire votre surface d&apos;attaque, vous permettre de d&#233;tecter certaines attaques et fournir d&apos;autres b&#233;n&#233;fices de s&#233;curit&#233; que m&#234;me un codage appropri&#233; n&apos;apporte pas.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://cwe.mitre.org/data/definitions/78.html&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/Command_Injection&lt;/p&gt;</reference>
+  <cweid>78</cweid>
+  <wascid>31</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>0</pluginid>
+  <alert>R&#233;pertoire de navigation</alert>
+  <name>R&#233;pertoire de navigation</name>
+  <riskcode>2</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Medium (Medium)</riskdesc>
+  <desc>&lt;p&gt;Il est possible d&apos;afficher la liste de r&#233;pertoires.  Cette liste peut r&#233;v&#233;ler des scripts cach&#233;s, des fichiers d&apos;inclusion, des sauvegardes de fichiers source etc. pouvant donner acc&#232;s &#224; des informations sensibles.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/amazon-link/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/custom-facebook-feed/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/custom-facebook-feed/css/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/custom-facebook-feed/js/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/metaslider/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/sliders/nivoslider/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/sliders/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/sliders/nivoslider/themes/default/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/sliders/nivoslider/themes/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/ml-slider/assets/sliders/nivoslider/themes/light/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/slider-image/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/slider-image/js/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/slider-image/style/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-albums/assets/css/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-albums/assets/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-gram/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-gram/assets/css/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  <instance>
+  <uri>http://jeanne-plante.com/wp-content/plugins/wolf-gram/assets/</uri>
+  <attack>Parent Directory</attack>
+  </instance>
+  </instances>
+  <count>48</count>
+  <solution>&lt;p&gt;D&#233;sactiver la navigation dans les r&#233;pertoires.  Si la navigation est malgr&#233; tout n&#233;cessaire, assurez-vous que les fichiers r&#233;pertori&#233;s n&apos;induisent pas de risques.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://httpd.apache.org/docs/mod/core.html#options&lt;/p&gt;&lt;p&gt;http://alamo.satlug.org/pipermail/satlug/2002-February/000053.html&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</reference>
+  <cweid>548</cweid>
+  <wascid>48</wascid>
+</alertitem>
+</alerts></site></OWASPZAPReport>

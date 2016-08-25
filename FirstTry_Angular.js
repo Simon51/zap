@@ -7,7 +7,7 @@ var app = angular.module('app',['nvd3','ui.bootstrap']);
 app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 	$scope.isArray = angular.isArray;
 	$scope.isCollapsed = true;
-	$http.get("grosZap.xml", {
+	$http.get("res/grosZap1.xml", {
 //ReportForSpiderWithActiveScan-17-11-07.xml
 
 		transformResponse:function(data) {
@@ -25,30 +25,65 @@ app.controller("ReportCtrl",function($scope, $http, $rootScope, $sce) {
 	.then(function(response) {
 		$scope.content = response.data;
 		$scope.values = $scope.Risk($scope.content);
+		$scope.nbvuln = $scope.NbRisk($scope.content);
 		console.log($scope.values);
 		console.log($scope.content);
+		
+		$scope.low = Math.round((($scope.nbvuln[0]/($scope.nbvuln[1]+$scope.nbvuln[0]+$scope.nbvuln[2]))*100));
+		$scope.nbLow=$scope.nbvuln[0];
+		$scope.med = Math.round((($scope.nbvuln[1]/($scope.nbvuln[1]+$scope.nbvuln[0]+$scope.nbvuln[2]))*100));
+		$scope.nbMed=$scope.nbvuln[1];
+		$scope.high = Math.round((($scope.nbvuln[2]/($scope.nbvuln[1]+$scope.nbvuln[0]+$scope.nbvuln[2]))*100));
+		$scope.nbHigh=$scope.nbvuln[2];
+		if ($scope.high === 0 && $scope.nbHigh !== 0) {
+			$scope.high = '1';
+		}
+		if ($scope.med === 0 && $scope.nbMed !== 0) {
+			$scope.med = '1';
+		}
+		if ($scope.low === 0 && $scope.nbLow !== 0) {
+			$scope.low = '1';
+		}
+		
 		$scope.data = [
 		               {
-		            	   key: "Low: " + Math.round((($scope.values[0]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100)) +"%",
-		            	   y: $scope.values[0]
+		            	   key: "Low: " + $scope.nbvuln[0],
+		            	   y: $scope.low
 		               },
 		               {
-		            	   key: "Medium: "+ Math.round((($scope.values[1]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100)) +"%",
-		            	   y: $scope.values[1]
+		            	   key: "Medium: " + $scope.nbvuln[1] ,
+		            	   y: $scope.med
 		               },
 		               {
-		            	   key: "High: " + Math.round((($scope.values[2]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100)) +"%" ,
-		            	   y: $scope.values[2]
+		            	   key: "High: " + $scope.nbvuln[2] ,
+		            	   y: $scope.high*2
 		               }
 		               ];
 		
-		$scope.low = Math.round((($scope.values[0]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100));
-		$scope.med = Math.round((($scope.values[1]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100));
-		$scope.high = Math.round((($scope.values[2]/($scope.values[1]+$scope.values[0]+$scope.values[2]))*100));
+		
+			
 	});
 
 
-
+	$scope.NbRisk = function(contenu) {
+		//console.log('contenu !! ' + JSON.stringify(contenu));
+		var compteur = [0,0,0];
+		angular.forEach(contenu, function(site, key) {
+			//console.log('contenu ZZ!! ');
+			angular.forEach(site.alerts,function(alert, key) {
+				//console.log('alerts.alertitem.riskcode : ' + JSON.stringify(alert));
+				angular.forEach(alert,function(item, key) {
+					//console.log('item.count');
+					if (item.riskcode) {
+						compteur[item.riskcode-1] = compteur[item.riskcode-1] + parseInt(item.count);
+					}
+				});
+			});
+		});
+		return compteur;
+	};
+	
+	
 	$scope.Risk = function(contenu) {
 		console.log('contenu !! ' + JSON.stringify(contenu));
 		var compteur = [0,0,0];
