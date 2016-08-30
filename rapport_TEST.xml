@@ -1,0 +1,581 @@
+<?xml version="1.0"?><OWASPZAPReport version="2.5.0" generated="mer., 24 août 2016 09:06:54">
+<site name="http://mon-poney-pie.skyrock.com" host="mon-poney-pie.skyrock.com" port="80" ssl="false"><alerts><alertitem>
+  <pluginid>10010</pluginid>
+  <alert>Cookie No HttpOnly Flag</alert>
+  <name>Cookie No HttpOnly Flag</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>PHPSESSID=cbcec24e084a44d43f9199d92977ae00; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=cbcec24e084a44d43f9199d92977ae00; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/robots.txt</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/sitemap.xml</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>PHPSESSID=21ff15ee361bfb939d1bb981b9baef54; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=21ff15ee361bfb939d1bb981b9baef54; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>PHPSESSID=2eac7c6487228c4da93788fd07c8c252; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=2eac7c6487228c4da93788fd07c8c252; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>PHPSESSID=f53d2437d13ed89e4b996de08bc6ad7c; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=f53d2437d13ed89e4b996de08bc6ad7c; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>PHPSESSID=a3736432a3fb6779b2a37fc7a13c15f8; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=a3736432a3fb6779b2a37fc7a13c15f8; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  <param>PHPSESSID=5e0749af773d957ab20c4ca86150f233; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=5e0749af773d957ab20c4ca86150f233; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3054498907-Album-photos-Mois-de-decembre-2011.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3054498907-Album-photos-Mois-de-decembre-2011.html</uri>
+  <param>PHPSESSID=587aabc819ac6f7409ac2d0f0a3c05e0; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=587aabc819ac6f7409ac2d0f0a3c05e0; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3053583711-Album-photos-Mois-de-decembre-2011.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3053583711-Album-photos-Mois-de-decembre-2011.html</uri>
+  <param>PHPSESSID=d4aaac638243d9d1293b1894576481ea; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=d4aaac638243d9d1293b1894576481ea; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3049613219-posted-on-2011-12-02.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3049613219-posted-on-2011-12-02.html</uri>
+  <param>PHPSESSID=c03a0353743b89cd4d5d775a4e440401; path=/; domain=skyrock.com</param>
+  <evidence>PHPSESSID=c03a0353743b89cd4d5d775a4e440401; path=/; domain=skyrock.com</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3047427177-posted-on-2011-11-24.html</uri>
+  <param>tz=Europe%2FParis; path=/; domain=skyrock.com</param>
+  <evidence>tz=Europe%2FParis; path=/; domain=skyrock.com</evidence>
+  </instance>
+  </instances>
+  <count>13923</count>
+  <solution>&lt;p&gt;Ensure that the HttpOnly flag is set for all cookies.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://www.owasp.org/index.php/HttpOnly&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>13</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10017</pluginid>
+  <alert>Inclusion de fichier source JavaScript inter-domaine</alert>
+  <name>Inclusion de fichier source JavaScript inter-domaine</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;The page includes one or more script files from a third-party domain.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>http://static.skyrock.net/js/common_ie.min.js?ey2X4mA</param>
+  <evidence>http://static.skyrock.net/js/common_ie.min.js?ey2X4mA</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>http://static.skyrock.net/js/blog.min.js?e1oTRPA</param>
+  <evidence>http://static.skyrock.net/js/blog.min.js?e1oTRPA</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</param>
+  <evidence>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</param>
+  <evidence>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>http://static.skyrock.net/js/common.min.js?esBu7VQ</param>
+  <evidence>http://static.skyrock.net/js/common.min.js?esBu7VQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>http://static.skyrock.net/js/common.min.js?esBu7VQ</param>
+  <evidence>http://static.skyrock.net/js/common.min.js?esBu7VQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>http://static.skyrock.net/js/blog.min.js?e1oTRPA</param>
+  <evidence>http://static.skyrock.net/js/blog.min.js?e1oTRPA</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</param>
+  <evidence>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</param>
+  <evidence>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>http://static.skyrock.net/js/common.min.js?esBu7VQ</param>
+  <evidence>http://static.skyrock.net/js/common.min.js?esBu7VQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>http://static.skyrock.net/js/blog.min.js?e1oTRPA</param>
+  <evidence>http://static.skyrock.net/js/blog.min.js?e1oTRPA</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</param>
+  <evidence>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</param>
+  <evidence>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/js/common.min.js?esBu7VQ</param>
+  <evidence>http://static.skyrock.net/js/common.min.js?esBu7VQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/js/blog.min.js?e1oTRPA</param>
+  <evidence>http://static.skyrock.net/js/blog.min.js?e1oTRPA</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</param>
+  <evidence>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</param>
+  <evidence>http://static.skyrock.net/stats/stats.min.js?e8jI_UQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/js/common.min.js?esBu7VQ</param>
+  <evidence>http://static.skyrock.net/js/common.min.js?esBu7VQ</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/js/blog.min.js?e1oTRPA</param>
+  <evidence>http://static.skyrock.net/js/blog.min.js?e1oTRPA</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  <param>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</param>
+  <evidence>http://static.skyrock.net/js/stats_blog.min.js?eqWKevQ</evidence>
+  </instance>
+  </instances>
+  <count>27077</count>
+  <solution>&lt;p&gt;Ensure JavaScript source files are loaded from only trusted sources, and the sources can&apos;t be controlled by end users of the application.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;&lt;/p&gt;</reference>
+  <cweid>829</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10016</pluginid>
+  <alert>Protection XSS du navigateur Internet non activ&#233;e</alert>
+  <name>Protection XSS du navigateur Internet non activ&#233;e</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;La protection XSS du navigateur Internet n&apos;est pas activ&#233;e, ou est d&#233;sactiv&#233;e par la configuration de l&apos;en-t&#234;te de r&#233;ponse HTTP &apos;X-XSS-Protection&apos; sur le serveur web&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/robots.txt</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/sitemap.xml</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3054498907-Album-photos-Mois-de-decembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3053583711-Album-photos-Mois-de-decembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3049613219-posted-on-2011-12-02.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3047427177-posted-on-2011-11-24.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044335239-posted-on-2011-11-11.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044333631-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043112663-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043105407-posted-on-2011-11-06.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039162453-posted-on-2011-10-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039093131-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039088893-posted-on-2011-10-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3038535585-posted-on-2011-10-19.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3037954099-Album-photos-Mois-de-decembre-2012.html</uri>
+  </instance>
+  </instances>
+  <count>8214</count>
+  <solution>&lt;p&gt;Assurez-vous que le filtre XSS du navigateur internet est activ&#233;, en renseignant l&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection &#224; &apos;1&apos;.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection autorise le serveur internet &#224; activer ou d&#233;sactiver le m&#233;canisme de protection XSS du navigateur internet. Les valeurs suivantes tenteraient d&apos;activer la protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; mode = block&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 1; report = http://www.example.com/xss&lt;/p&gt;&lt;p&gt;Les valeurs suivantes d&#233;sactiveraient cette protection:&lt;/p&gt;&lt;p&gt;X-XSS-Protection: 0&lt;/p&gt;&lt;p&gt;L&apos;en-t&#234;te de r&#233;ponse HTTP X-XSS-Protection est actuellement support&#233;e par Internet Explorer, Chrome et Safari (WebKit). &lt;/p&gt;&lt;p&gt;Notez que cette alerte n&apos;est d&#233;clench&#233;e que si le corps de r&#233;ponse pouvaient contenir une charge utile XSS (avec un type de contenu texte, d&apos;une longueur diff&#233;rente de z&#233;ro).&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet&lt;/p&gt;&lt;p&gt;https://blog.veracode.com/2014/03/guidelines-for-setting-security-headers/&lt;/p&gt;</reference>
+  <cweid>933</cweid>
+  <wascid>14</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10012</pluginid>
+  <alert>Saisie semi-automatique du mot de passe dans le navigateur</alert>
+  <name>Saisie semi-automatique du mot de passe dans le navigateur</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;The AUTOCOMPLETE attribute is not disabled on an HTML FORM/INPUT element containing password type input.  Passwords may be stored in browsers and retrieved.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3054498907-Album-photos-Mois-de-decembre-2011.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3053583711-Album-photos-Mois-de-decembre-2011.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3049613219-posted-on-2011-12-02.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3047427177-posted-on-2011-11-24.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044335239-posted-on-2011-11-11.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044333631-Album-photos-Mois-de-novembre-2011.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043112663-Album-photos-Mois-de-novembre-2011.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043105407-posted-on-2011-11-06.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039162453-posted-on-2011-10-22.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039093131-Album-photos-Mois-de-novembre-2011.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039088893-posted-on-2011-10-22.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3038535585-posted-on-2011-10-19.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3037954099-Album-photos-Mois-de-decembre-2012.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3037891009-posted-on-2011-10-16.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3037025381-posted-on-2011-10-12.html</uri>
+  <param>input</param>
+  <evidence>&lt;input type=&quot;password&quot; tabindex=&quot;2&quot; id=&quot;password_loginbox&quot; placeholder=&quot;Mot de passe&quot; name=&quot;need_login_form_password&quot; class=&quot;text margin_bottom&quot; value=&quot;&quot; /&gt;</evidence>
+  </instance>
+  </instances>
+  <count>10368</count>
+  <solution>&lt;p&gt;Turn off the AUTOCOMPLETE attribute in forms or individual input elements containing password inputs by using AUTOCOMPLETE=&apos;OFF&apos;.&lt;/p&gt;</solution>
+  <reference>&lt;p&gt;http://www.w3schools.com/tags/att_input_autocomplete.asp&lt;/p&gt;&lt;p&gt;https://msdn.microsoft.com/en-us/library/ms533486%28v=vs.85%29.aspx&lt;/p&gt;</reference>
+  <cweid>525</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alert>En-t&#234;te X-Content-Type-Options manquant</alert>
+  <name>En-t&#234;te X-Content-Type-Options manquant</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Content-Type-Options contre le sniffing MIME n&apos;est pas renseign&#233; &#224; &apos;nosniff&apos;. Ceci permet &#224; de vielles versions d&apos;Internet Explorer et de Chrome de pratiquer le sniffing MIME sur le corps de r&#233;ponse, conduisant potentiellement &#224; l&apos;interpr&#233;tation et l&apos;affichage du contenu dans un autre type que celui d&#233;clar&#233;. A l&apos;heure actuelle (d&#233;but 2014), les anciennes versions de Firefox utiliseront le type de contenu d&#233;clar&#233; (au cas o&#249; un type est d&#233;termin&#233;), plut&#244;t qu&apos;analyser le MIME.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/robots.txt</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/sitemap.xml</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3054498907-Album-photos-Mois-de-decembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3053583711-Album-photos-Mois-de-decembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3049613219-posted-on-2011-12-02.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3047427177-posted-on-2011-11-24.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044335239-posted-on-2011-11-11.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044333631-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043112663-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043105407-posted-on-2011-11-06.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039162453-posted-on-2011-10-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039093131-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039088893-posted-on-2011-10-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3038535585-posted-on-2011-10-19.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3037954099-Album-photos-Mois-de-decembre-2012.html</uri>
+  </instance>
+  </instances>
+  <count>8214</count>
+  <solution>&lt;p&gt;Assurez-vous que l&apos;application ou le serveur internet renseigne l&apos;en-t&#234;te Content-Type correctement, et que l&apos;en-t&#234;te X-Content-Type-Options prenne la valeur &apos;nosniff&apos; pour toutes les pages internet.&lt;/p&gt;&lt;p&gt;Si possible, assurez-vous que l&apos;utilisateur utilise un navigateur moderne et conforme aux standards, qui ne pratique pas du tout le sniffing MIME, ou qui puisse &#234;tre command&#233; par l&apos;application ou le serveur internet de mani&#232;re &#224; ne pas pratiquer le sniffing MIME.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Ce probl&#232;me s&apos;applique toujours aux pages de type erreur (401, 403, 500, etc.), car ces pages sont encore souvent touch&#233;es par des probl&#232;mes d&apos;injection, auquel cas il est encore possible que les navigateurs interpr&#233;tent des pages autrement que selon leur type de contenu r&#233;el.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://www.owasp.org/index.php/List_of_useful_HTTP_headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alert>En-t&#234;te X-Frame-Options pas renseign&#233;</alert>
+  <name>En-t&#234;te X-Frame-Options pas renseign&#233;</name>
+  <riskcode>2</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Medium (Medium)</riskdesc>
+  <desc>&lt;p&gt;L&apos;en-t&#234;te X-Frame-Options n&apos;est pas incluse dans la r&#233;ponse HTTP pour prot&#233;ger contre les attaques de &apos;ClickJacking&apos;.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/robots.txt</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/sitemap.xml</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3187736839-posted-on-2013-09-28.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3056130015-posted-on-2011-12-25.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055133633-posted-on-2011-12-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3055082003-posted-on-2011-12-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3054498907-Album-photos-Mois-de-decembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3053583711-Album-photos-Mois-de-decembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3049613219-posted-on-2011-12-02.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3047427177-posted-on-2011-11-24.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044335239-posted-on-2011-11-11.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3044333631-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043112663-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3043105407-posted-on-2011-11-06.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039162453-posted-on-2011-10-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039093131-Album-photos-Mois-de-novembre-2011.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3039088893-posted-on-2011-10-22.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3038535585-posted-on-2011-10-19.html</uri>
+  </instance>
+  <instance>
+  <uri>http://mon-poney-pie.skyrock.com/3037954099-Album-photos-Mois-de-decembre-2012.html</uri>
+  </instance>
+  </instances>
+  <count>8214</count>
+  <solution>&lt;p&gt;La plupart des navigateurs internet modernes supportent l&apos;en-t&#234;te HTTP X-Frame-Options. Assurez-vous que celle-ci est renseign&#233;e sur toutes les pages internet retourn&#233;es par votre site (si cette page ne doit &#234;tre encadr&#233;e que par des pages de votre serveur (p.ex. fait partie d&apos;un FRAMESET), alors utilisez la valeur SAMEORIGIN, sinon choisissez la valeur DENY quand la page n&apos;est jamais encadr&#233;e. ALLOW-FROM permet &#224; des sites sp&#233;cifiques d&apos;encadrer la page, pour autant que le navigateur le supporte).&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;Avec un seuil &quot;Haut&quot;, ce scanner n&apos;alertera pas pour les r&#233;ponses d&#8217;erreur client ou serveur.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+</alertitem>
+</alerts></site></OWASPZAPReport>
